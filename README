@@ -1,0 +1,41 @@
+PropSetter is an Objective C library for writing XPath/CSS like selectors 
+against your NSObjects, and having those selectors change values in those
+objects at runtime.  Expressions look similar to this:
+
+NSString[self = 'The text that it should match']
+MyViewController[.stringArray contains 'This string'].title
+UIView[.backgroundColor = .foregroundColor].alpha
+
+These expressions follow the basic form:
+
+ClassName[aSeriesOfExpressions].propertyThatWillBeChanged
+
+Expressions may be and'ed and or'ed to each other, like so:
+
+MyViewController[.title = 'Sports' and .dataSource.stale = true].staleIndicatorVisible
+
+The full language is expressed in the selector.grammar file included in the source. 
+Parsing facilities are provided by parsekit (http://parsekit.com/), the lipo'd static
+lib of which is included with this app. (Revealing the clear iPhone
+bias of the author. If you happen to patch support for Mac OS compiling into the project,
+I will happily patch it back into the library.)
+
+Use the PropSetterManager object to allow for these expressions to take action upon your objects.
+The PropSetterManager object retains your objects as they are observed for changes, using
+the KVO functionality provided in Cocoa.  For example:
+
+[[PropSetterManager manager] addSelectorFromString:@"UIView[.text = 'Red'].backgroundColor" withValue:[UIColor redColor]];
+[[PropSetterManager manager] beginObservingObject:myLabel]
+
+You may also register callback functions to take action whenever a particular property changes,
+using syntax like the following.
+
+[[PropSetterManager manager] addSelectorFromString:@"NSObject[.text].backgroundColor" withTarget:self andSelector:@selector(changeColorOfObject:)];
+
+To allow for simple rules where NSString, NSData, NSDictionary or NSNumber values are the only 
+values of note to insert into a given object, you may use a property list to add rules to the manager.
+
+[[PropSetterManager manager] addSelectorsFromPlist:filename]
+
+
+This code was written for the Indianapolis Star, and has been open sourced by them using the MIT license.

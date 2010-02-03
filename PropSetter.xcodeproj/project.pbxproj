@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD6668550F83F84100ABF98B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668540F83F84100ABF98B /* Foundation.framework */; };
+		BD6668570F83F84100ABF98B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668560F83F84100ABF98B /* UIKit.framework */; };
+		BD6668F80F83F87C00ABF98B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */; };
+		BD80A3EC0F8A69980067878C /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
+		BD80A3F90F8A6A180067878C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
+		BD80A6F20F8C87A60067878C /* UnitTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */; };
+		BD80A79A0F8D2EA50067878C /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */; };
+		BD80A79B0F8D2EA50067878C /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */; };
+		BD80A79C0F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */; };
+		BE1871B210F378A200C8D044 /* PropSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1871B110F378A200C8D044 /* PropSetter.m */; };
+		BE1871B310F378A200C8D044 /* PropSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1871B010F378A200C8D044 /* PropSetter.h */; };
+		BE1871B410F378A200C8D044 /* PropSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1871B110F378A200C8D044 /* PropSetter.m */; };
+		BE1871DA10F3818D00C8D044 /* selector_grammar.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1871D910F3818D00C8D044 /* selector_grammar.h */; };
+		BE4FA2901118EE3100DBB98A /* PropSetterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */; };
+		BE4FA2911118EE3100DBB98A /* PropSetterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */; };
+		BE4FA2921118EE3100DBB98A /* PropSetterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */; };
+		BE4FA2BF1119C9C700DBB98A /* PropSetterManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */; };
+		BE4FA2C01119C9C700DBB98A /* PropSetterManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */; };
+		BE6951EE1118A8930096FE6A /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6951ED1118A8930096FE6A /* PropSetterOperator.m */; };
+		BE6951EF1118A8930096FE6A /* PropSetterOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6951EC1118A8930096FE6A /* PropSetterOperator.h */; };
+		BE6951F01118A8930096FE6A /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6951ED1118A8930096FE6A /* PropSetterOperator.m */; };
+		BE6D662F11177B4C008D34BC /* PropSetterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D662E11177B4C008D34BC /* PropSetterTest.m */; };
+		BE6D663011177B4C008D34BC /* PropSetterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D662E11177B4C008D34BC /* PropSetterTest.m */; };
+		BEB9A79110F535230094D27C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB9A79010F535230094D27C /* UIKit.framework */; };
+		BEB9A79510F535300094D27C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB9A79410F535300094D27C /* CoreGraphics.framework */; };
+		BEB9A7F410F53CD80094D27C /* PropSetterParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB9A7F210F53CD80094D27C /* PropSetterParser.h */; };
+		BEB9A7F510F53CD80094D27C /* PropSetterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB9A7F310F53CD80094D27C /* PropSetterParser.m */; };
+		BEB9A7F610F53CD80094D27C /* PropSetterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB9A7F310F53CD80094D27C /* PropSetterParser.m */; };
+		BEE1E67010FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E66F10FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h */; };
+		BEE1E67310FE5A6900FCD2F4 /* PropSetterExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E67110FE5A6900FCD2F4 /* PropSetterExpression.h */; };
+		BEE1E67410FE5A6900FCD2F4 /* PropSetterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67210FE5A6900FCD2F4 /* PropSetterExpression.m */; };
+		BEE1E67510FE5A6900FCD2F4 /* PropSetterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67210FE5A6900FCD2F4 /* PropSetterExpression.m */; };
+		BEE1E67810FE5A9700FCD2F4 /* PropSetterClause.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E67610FE5A9700FCD2F4 /* PropSetterClause.h */; };
+		BEE1E67910FE5A9700FCD2F4 /* PropSetterClause.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67710FE5A9700FCD2F4 /* PropSetterClause.m */; };
+		BEE1E67A10FE5A9700FCD2F4 /* PropSetterClause.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67710FE5A9700FCD2F4 /* PropSetterClause.m */; };
+		BEE1E67D10FE5AAD00FCD2F4 /* PropSetterIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E67B10FE5AAD00FCD2F4 /* PropSetterIdentifier.h */; };
+		BEE1E67E10FE5AAD00FCD2F4 /* PropSetterIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67C10FE5AAD00FCD2F4 /* PropSetterIdentifier.m */; };
+		BEE1E67F10FE5AAD00FCD2F4 /* PropSetterIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67C10FE5AAD00FCD2F4 /* PropSetterIdentifier.m */; };
+		BEE1E68210FE5AC300FCD2F4 /* PropSetterSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E68010FE5AC300FCD2F4 /* PropSetterSelector.h */; };
+		BEE1E68310FE5AC300FCD2F4 /* PropSetterSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68110FE5AC300FCD2F4 /* PropSetterSelector.m */; };
+		BEE1E68410FE5AC300FCD2F4 /* PropSetterSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68110FE5AC300FCD2F4 /* PropSetterSelector.m */; };
+		BEE1E68710FE5AE500FCD2F4 /* PropSetterValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E68510FE5AE500FCD2F4 /* PropSetterValue.h */; };
+		BEE1E68810FE5AE500FCD2F4 /* PropSetterValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68610FE5AE500FCD2F4 /* PropSetterValue.m */; };
+		BEE1E68910FE5AE500FCD2F4 /* PropSetterValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68610FE5AE500FCD2F4 /* PropSetterValue.m */; };
+		BEE1E68C10FE5B0100FCD2F4 /* PropSetterSelfReference.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E68A10FE5B0100FCD2F4 /* PropSetterSelfReference.h */; };
+		BEE1E68D10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68B10FE5B0100FCD2F4 /* PropSetterSelfReference.m */; };
+		BEE1E68E10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68B10FE5B0100FCD2F4 /* PropSetterSelfReference.m */; };
+		BEE1E69110FE5B1400FCD2F4 /* PropSetterProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E68F10FE5B1400FCD2F4 /* PropSetterProperty.h */; };
+		BEE1E69210FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E69010FE5B1400FCD2F4 /* PropSetterProperty.m */; };
+		BEE1E69310FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E69010FE5B1400FCD2F4 /* PropSetterProperty.m */; };
+		BEE1E69F10FE5B5600FCD2F4 /* PropSetterTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E69E10FE5B5600FCD2F4 /* PropSetterTypes.h */; };
+		BEE1E6A110FE5B9000FCD2F4 /* PropSetterError.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E6A010FE5B9000FCD2F4 /* PropSetterError.h */; };
+		BEEEFA9010F2773400767C37 /* GrammarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEEFA8F10F2773400767C37 /* GrammarTest.m */; };
+		BEEEFBA010F288B400767C37 /* selector.grammar in Resources */ = {isa = PBXBuildFile; fileRef = BEEEFB9F10F288B400767C37 /* selector.grammar */; };
+		BEEEFBF710F28DA100767C37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEEFBF610F28DA100767C37 /* Foundation.framework */; };
+		BEEEFC8610F2999700767C37 /* libparsekit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEEFC8510F2999700767C37 /* libparsekit.a */; };
+		BEEEFC8710F2999700767C37 /* libparsekit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEEFC8510F2999700767C37 /* libparsekit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE1871FC10F382A000C8D044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1871EF10F3825E00C8D044;
+			remoteInfo = "Generate Grammars";
+		};
+		BE1871FE10F382A800C8D044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1871EF10F3825E00C8D044;
+			remoteInfo = "Generate Grammars";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD80A3F80F8A69DC0067878C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD80A3F90F8A6A180067878C /* OCMock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		32DBCF5E0370ADEE00C91783 /* PropSetter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetter_Prefix.pch; sourceTree = "<group>"; };
+		BD6668540F83F84100ABF98B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BD6668560F83F84100ABF98B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BD80A3A20F894C7F0067878C /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD80A3EB0F8A69980067878C /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
+		BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BD80A7940F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = SOURCE_ROOT; };
+		BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = SOURCE_ROOT; };
+		BD80A7960F8D2EA50067878C /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = SOURCE_ROOT; };
+		BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = SOURCE_ROOT; };
+		BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = SOURCE_ROOT; };
+		BD80A7990F8D2EA50067878C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = SOURCE_ROOT; };
+		BD80A79E0F8D3B310067878C /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunIPhoneUnitTest.sh; sourceTree = SOURCE_ROOT; };
+		BE1871B010F378A200C8D044 /* PropSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetter.h; sourceTree = "<group>"; };
+		BE1871B110F378A200C8D044 /* PropSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetter.m; sourceTree = "<group>"; };
+		BE1871D910F3818D00C8D044 /* selector_grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selector_grammar.h; sourceTree = "<group>"; };
+		BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterManager.h; sourceTree = "<group>"; };
+		BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterManager.m; sourceTree = "<group>"; };
+		BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterManagerTest.m; sourceTree = "<group>"; };
+		BE6951EC1118A8930096FE6A /* PropSetterOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterOperator.h; sourceTree = "<group>"; };
+		BE6951ED1118A8930096FE6A /* PropSetterOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterOperator.m; sourceTree = "<group>"; };
+		BE6D662E11177B4C008D34BC /* PropSetterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterTest.m; sourceTree = "<group>"; };
+		BEB9A79010F535230094D27C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BEB9A79410F535300094D27C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BEB9A7F210F53CD80094D27C /* PropSetterParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterParser.h; sourceTree = "<group>"; };
+		BEB9A7F310F53CD80094D27C /* PropSetterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterParser.m; sourceTree = "<group>"; };
+		BEE1E66F10FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterObjectWithValue.h; sourceTree = "<group>"; };
+		BEE1E67110FE5A6900FCD2F4 /* PropSetterExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterExpression.h; sourceTree = "<group>"; };
+		BEE1E67210FE5A6900FCD2F4 /* PropSetterExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterExpression.m; sourceTree = "<group>"; };
+		BEE1E67610FE5A9700FCD2F4 /* PropSetterClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterClause.h; sourceTree = "<group>"; };
+		BEE1E67710FE5A9700FCD2F4 /* PropSetterClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterClause.m; sourceTree = "<group>"; };
+		BEE1E67B10FE5AAD00FCD2F4 /* PropSetterIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterIdentifier.h; sourceTree = "<group>"; };
+		BEE1E67C10FE5AAD00FCD2F4 /* PropSetterIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterIdentifier.m; sourceTree = "<group>"; };
+		BEE1E68010FE5AC300FCD2F4 /* PropSetterSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterSelector.h; sourceTree = "<group>"; };
+		BEE1E68110FE5AC300FCD2F4 /* PropSetterSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterSelector.m; sourceTree = "<group>"; };
+		BEE1E68510FE5AE500FCD2F4 /* PropSetterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterValue.h; sourceTree = "<group>"; };
+		BEE1E68610FE5AE500FCD2F4 /* PropSetterValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterValue.m; sourceTree = "<group>"; };
+		BEE1E68A10FE5B0100FCD2F4 /* PropSetterSelfReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterSelfReference.h; sourceTree = "<group>"; };
+		BEE1E68B10FE5B0100FCD2F4 /* PropSetterSelfReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterSelfReference.m; sourceTree = "<group>"; };
+		BEE1E68F10FE5B1400FCD2F4 /* PropSetterProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterProperty.h; sourceTree = "<group>"; };
+		BEE1E69010FE5B1400FCD2F4 /* PropSetterProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterProperty.m; sourceTree = "<group>"; };
+		BEE1E69E10FE5B5600FCD2F4 /* PropSetterTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterTypes.h; sourceTree = "<group>"; };
+		BEE1E6A010FE5B9000FCD2F4 /* PropSetterError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterError.h; sourceTree = "<group>"; };
+		BEEEFA8F10F2773400767C37 /* GrammarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrammarTest.m; sourceTree = "<group>"; };
+		BEEEFB9F10F288B400767C37 /* selector.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = selector.grammar; sourceTree = "<group>"; };
+		BEEEFBF610F28DA100767C37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEEEFC8510F2999700767C37 /* libparsekit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libparsekit.a; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libPropSetter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPropSetter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD80A3A00F894C7F0067878C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD80A3EC0F8A69980067878C /* OCMock.framework in Frameworks */,
+				BEEEFBF710F28DA100767C37 /* Foundation.framework in Frameworks */,
+				BEEEFC8610F2999700767C37 /* libparsekit.a in Frameworks */,
+				BEB9A79110F535230094D27C /* UIKit.framework in Frameworks */,
+				BEB9A79510F535300094D27C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6668550F83F84100ABF98B /* Foundation.framework in Frameworks */,
+				BD6668570F83F84100ABF98B /* UIKit.framework in Frameworks */,
+				BD6668F80F83F87C00ABF98B /* CoreGraphics.framework in Frameworks */,
+				BEEEFC8710F2999700767C37 /* libparsekit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libPropSetter.a */,
+				BD80A3A20F894C7F0067878C /* UnitTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* PropSetter */ = {
+			isa = PBXGroup;
+			children = (
+				BEEEFC8510F2999700767C37 /* libparsekit.a */,
+				BD849B6E0F8921ED00EB1682 /* GoogleToolbox */,
+				BD849B6C0F8921BB00EB1682 /* UnitTests */,
+				08FB77AEFE84172EC02AAC07 /* Source */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				BEEEFB5A10F2878C00767C37 /* Resources */,
+				BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */,
+				BD80A79E0F8D3B310067878C /* RunIPhoneUnitTest.sh */,
+				BEEEFBF610F28DA100767C37 /* Foundation.framework */,
+				BEB9A79010F535230094D27C /* UIKit.framework */,
+				BEB9A79410F535300094D27C /* CoreGraphics.framework */,
+			);
+			name = PropSetter;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD80A3EB0F8A69980067878C /* OCMock.framework */,
+				BD6668560F83F84100ABF98B /* UIKit.framework */,
+				BD6668540F83F84100ABF98B /* Foundation.framework */,
+				BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BE1871D910F3818D00C8D044 /* selector_grammar.h */,
+				BE1871B010F378A200C8D044 /* PropSetter.h */,
+				BE1871B110F378A200C8D044 /* PropSetter.m */,
+				BEB9A7F210F53CD80094D27C /* PropSetterParser.h */,
+				BEB9A7F310F53CD80094D27C /* PropSetterParser.m */,
+				BEE1E66F10FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h */,
+				BEE1E67110FE5A6900FCD2F4 /* PropSetterExpression.h */,
+				BEE1E67210FE5A6900FCD2F4 /* PropSetterExpression.m */,
+				BEE1E67610FE5A9700FCD2F4 /* PropSetterClause.h */,
+				BEE1E67710FE5A9700FCD2F4 /* PropSetterClause.m */,
+				BEE1E67B10FE5AAD00FCD2F4 /* PropSetterIdentifier.h */,
+				BEE1E67C10FE5AAD00FCD2F4 /* PropSetterIdentifier.m */,
+				BEE1E68010FE5AC300FCD2F4 /* PropSetterSelector.h */,
+				BEE1E68110FE5AC300FCD2F4 /* PropSetterSelector.m */,
+				BEE1E68510FE5AE500FCD2F4 /* PropSetterValue.h */,
+				BEE1E68610FE5AE500FCD2F4 /* PropSetterValue.m */,
+				BEE1E68A10FE5B0100FCD2F4 /* PropSetterSelfReference.h */,
+				BEE1E68B10FE5B0100FCD2F4 /* PropSetterSelfReference.m */,
+				BEE1E68F10FE5B1400FCD2F4 /* PropSetterProperty.h */,
+				BEE1E69010FE5B1400FCD2F4 /* PropSetterProperty.m */,
+				BEE1E69E10FE5B5600FCD2F4 /* PropSetterTypes.h */,
+				BEE1E6A010FE5B9000FCD2F4 /* PropSetterError.h */,
+				BE6951EC1118A8930096FE6A /* PropSetterOperator.h */,
+				BE6951ED1118A8930096FE6A /* PropSetterOperator.m */,
+				BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */,
+				BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* PropSetter_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		BD849B6C0F8921BB00EB1682 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEEEFA8F10F2773400767C37 /* GrammarTest.m */,
+				BE6D662E11177B4C008D34BC /* PropSetterTest.m */,
+				BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */,
+			);
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
+		BD849B6E0F8921ED00EB1682 /* GoogleToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				BD80A7990F8D2EA50067878C /* GTMDefines.h */,
+				BD80A7960F8D2EA50067878C /* GTMSenTestCase.h */,
+				BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */,
+				BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */,
+				BD80A7940F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.h */,
+				BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */,
+			);
+			name = GoogleToolbox;
+			sourceTree = "<group>";
+		};
+		BEEEFB5A10F2878C00767C37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEEEFB9F10F288B400767C37 /* selector.grammar */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1871B310F378A200C8D044 /* PropSetter.h in Headers */,
+				BE1871DA10F3818D00C8D044 /* selector_grammar.h in Headers */,
+				BEB9A7F410F53CD80094D27C /* PropSetterParser.h in Headers */,
+				BEE1E67010FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h in Headers */,
+				BEE1E67310FE5A6900FCD2F4 /* PropSetterExpression.h in Headers */,
+				BEE1E67810FE5A9700FCD2F4 /* PropSetterClause.h in Headers */,
+				BEE1E67D10FE5AAD00FCD2F4 /* PropSetterIdentifier.h in Headers */,
+				BEE1E68210FE5AC300FCD2F4 /* PropSetterSelector.h in Headers */,
+				BEE1E68710FE5AE500FCD2F4 /* PropSetterValue.h in Headers */,
+				BEE1E68C10FE5B0100FCD2F4 /* PropSetterSelfReference.h in Headers */,
+				BEE1E69110FE5B1400FCD2F4 /* PropSetterProperty.h in Headers */,
+				BEE1E69F10FE5B5600FCD2F4 /* PropSetterTypes.h in Headers */,
+				BEE1E6A110FE5B9000FCD2F4 /* PropSetterError.h in Headers */,
+				BE6951EF1118A8930096FE6A /* PropSetterOperator.h in Headers */,
+				BE4FA2911118EE3100DBB98A /* PropSetterManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		BE1871EF10F3825E00C8D044 /* Generate Grammars */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-i selector.grammar selector_grammar.h";
+			buildConfigurationList = BE1871FA10F3826E00C8D044 /* Build configuration list for PBXLegacyTarget "Generate Grammars" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/xxd;
+			buildWorkingDirectory = /Users/czelenak/opt/src/PropSetter;
+			dependencies = (
+			);
+			name = "Generate Grammars";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Generate Grammars";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		BD80A3A10F894C7F0067878C /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD80A3B30F894CAE0067878C /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				BD80A3F80F8A69DC0067878C /* CopyFiles */,
+				BD80A39E0F894C7F0067878C /* Resources */,
+				BD80A39F0F894C7F0067878C /* Sources */,
+				BD80A3A00F894C7F0067878C /* Frameworks */,
+				BD80A3C90F894CDD0067878C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1871FF10F382A800C8D044 /* PBXTargetDependency */,
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = BD80A3A20F894C7F0067878C /* UnitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2AAC07D0554694100DB518D /* PropSetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "PropSetter" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1871FD10F382A000C8D044 /* PBXTargetDependency */,
+			);
+			name = PropSetter;
+			productName = PropSetter;
+			productReference = D2AAC07E0554694100DB518D /* libPropSetter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "PropSetter" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* PropSetter */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* PropSetter */,
+				BD80A3A10F894C7F0067878C /* UnitTest */,
+				BE1871EF10F3825E00C8D044 /* Generate Grammars */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD80A39E0F894C7F0067878C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD80A6F20F8C87A60067878C /* UnitTest-Info.plist in Resources */,
+				BEEEFBA010F288B400767C37 /* selector.grammar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD80A3C90F894CDD0067878C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\"$GTM_PATH/UnitTesting/RunIPhoneUnitTest.sh\"\n\n\"$PROJECT_DIR/RunIPhoneUnitTest.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD80A39F0F894C7F0067878C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD80A79A0F8D2EA50067878C /* GTMSenTestCase.m in Sources */,
+				BD80A79B0F8D2EA50067878C /* GTMIPhoneUnitTestMain.m in Sources */,
+				BD80A79C0F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				BEEEFA9010F2773400767C37 /* GrammarTest.m in Sources */,
+				BE1871B210F378A200C8D044 /* PropSetter.m in Sources */,
+				BEB9A7F610F53CD80094D27C /* PropSetterParser.m in Sources */,
+				BEE1E67510FE5A6900FCD2F4 /* PropSetterExpression.m in Sources */,
+				BEE1E67A10FE5A9700FCD2F4 /* PropSetterClause.m in Sources */,
+				BEE1E67F10FE5AAD00FCD2F4 /* PropSetterIdentifier.m in Sources */,
+				BEE1E68410FE5AC300FCD2F4 /* PropSetterSelector.m in Sources */,
+				BEE1E68910FE5AE500FCD2F4 /* PropSetterValue.m in Sources */,
+				BEE1E68E10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */,
+				BEE1E69310FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */,
+				BE6D663011177B4C008D34BC /* PropSetterTest.m in Sources */,
+				BE6951EE1118A8930096FE6A /* PropSetterOperator.m in Sources */,
+				BE4FA2901118EE3100DBB98A /* PropSetterManager.m in Sources */,
+				BE4FA2BF1119C9C700DBB98A /* PropSetterManagerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1871B410F378A200C8D044 /* PropSetter.m in Sources */,
+				BEB9A7F510F53CD80094D27C /* PropSetterParser.m in Sources */,
+				BEE1E67410FE5A6900FCD2F4 /* PropSetterExpression.m in Sources */,
+				BEE1E67910FE5A9700FCD2F4 /* PropSetterClause.m in Sources */,
+				BEE1E67E10FE5AAD00FCD2F4 /* PropSetterIdentifier.m in Sources */,
+				BEE1E68310FE5AC300FCD2F4 /* PropSetterSelector.m in Sources */,
+				BEE1E68810FE5AE500FCD2F4 /* PropSetterValue.m in Sources */,
+				BEE1E68D10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */,
+				BEE1E69210FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */,
+				BE6D662F11177B4C008D34BC /* PropSetterTest.m in Sources */,
+				BE6951F01118A8930096FE6A /* PropSetterOperator.m in Sources */,
+				BE4FA2921118EE3100DBB98A /* PropSetterManager.m in Sources */,
+				BE4FA2C01119C9C700DBB98A /* PropSetterManagerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE1871FD10F382A000C8D044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1871EF10F3825E00C8D044 /* Generate Grammars */;
+			targetProxy = BE1871FC10F382A000C8D044 /* PBXContainerItemProxy */;
+		};
+		BE1871FF10F382A800C8D044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1871EF10F3825E00C8D044 /* Generate Grammars */;
+			targetProxy = BE1871FE10F382A800C8D044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PropSetter_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = (
+					"-whole-archive",
+					"-licucore",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = PropSetter;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PropSetter_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-whole-archive",
+					"-licucore",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = PropSetter;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/czelenak/opt/build/todparsekit/include/;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"-whole-archive",
+					"-licucore",
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/czelenak/opt/build/todparsekit/include/;
+				OTHER_LDFLAGS = (
+					"-whole-archive",
+					"-licucore",
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Release;
+		};
+		BD80A3A40F894C800067878C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PropSetter_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/Users/czelenak/opt/build/todparsekit/include/,
+					"\"$(SRCROOT)/Frameworks\"/**",
+				);
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-licucore",
+					"-Objc",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTest;
+				SDKROOT = iphonesimulator3.1.2;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+			};
+			name = Debug;
+		};
+		BD80A3A50F894C800067878C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GTM_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/Users/czelenak/opt/build/todparsekit/include/,
+					"\"$(SRCROOT)/Frameworks\"/**",
+				);
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-licucore",
+					"-Objc",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTest;
+				SDKROOT = iphonesimulator3.1.2;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BE1871F010F3825E00C8D044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Generate Grammars";
+			};
+			name = Debug;
+		};
+		BE1871F110F3825E00C8D044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Generate Grammars";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "PropSetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "PropSetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD80A3B30F894CAE0067878C /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD80A3A40F894C800067878C /* Debug */,
+				BD80A3A50F894C800067878C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1871FA10F3826E00C8D044 /* Build configuration list for PBXLegacyTarget "Generate Grammars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1871F010F3825E00C8D044 /* Debug */,
+				BE1871F110F3825E00C8D044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
