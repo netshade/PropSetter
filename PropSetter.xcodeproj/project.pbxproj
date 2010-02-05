@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BD6668550F83F84100ABF98B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668540F83F84100ABF98B /* Foundation.framework */; };
-		BD6668570F83F84100ABF98B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668560F83F84100ABF98B /* UIKit.framework */; };
-		BD6668F80F83F87C00ABF98B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */; };
 		BD80A3EC0F8A69980067878C /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
 		BD80A3F90F8A6A180067878C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
 		BD80A6F20F8C87A60067878C /* UnitTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */; };
@@ -24,11 +22,9 @@
 		BE4FA2911118EE3100DBB98A /* PropSetterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */; };
 		BE4FA2921118EE3100DBB98A /* PropSetterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */; };
 		BE4FA2BF1119C9C700DBB98A /* PropSetterManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */; };
-		BE4FA2C01119C9C700DBB98A /* PropSetterManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */; };
 		BE6951EE1118A8930096FE6A /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6951ED1118A8930096FE6A /* PropSetterOperator.m */; };
 		BE6951EF1118A8930096FE6A /* PropSetterOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6951EC1118A8930096FE6A /* PropSetterOperator.h */; };
 		BE6951F01118A8930096FE6A /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6951ED1118A8930096FE6A /* PropSetterOperator.m */; };
-		BE6D662F11177B4C008D34BC /* PropSetterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D662E11177B4C008D34BC /* PropSetterTest.m */; };
 		BE6D663011177B4C008D34BC /* PropSetterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D662E11177B4C008D34BC /* PropSetterTest.m */; };
 		BEB9A79110F535230094D27C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB9A79010F535230094D27C /* UIKit.framework */; };
 		BEB9A79510F535300094D27C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB9A79410F535300094D27C /* CoreGraphics.framework */; };
@@ -166,8 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6668550F83F84100ABF98B /* Foundation.framework in Frameworks */,
-				BD6668570F83F84100ABF98B /* UIKit.framework in Frameworks */,
-				BD6668F80F83F87C00ABF98B /* CoreGraphics.framework in Frameworks */,
 				BEEEFC8710F2999700767C37 /* libparsekit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,10 +451,8 @@
 				BEE1E68810FE5AE500FCD2F4 /* PropSetterValue.m in Sources */,
 				BEE1E68D10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */,
 				BEE1E69210FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */,
-				BE6D662F11177B4C008D34BC /* PropSetterTest.m in Sources */,
 				BE6951F01118A8930096FE6A /* PropSetterOperator.m in Sources */,
 				BE4FA2921118EE3100DBB98A /* PropSetterManager.m in Sources */,
-				BE4FA2C01119C9C700DBB98A /* PropSetterManagerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,12 +492,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DDEBUG=1";
-				OTHER_LDFLAGS = (
-					"-whole-archive",
-					"-licucore",
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = PropSetter;
 			};
 			name = Debug;
@@ -526,12 +513,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-whole-archive",
-					"-licucore",
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = PropSetter;
 			};
 			name = Release;
@@ -548,12 +530,7 @@
 				HEADER_SEARCH_PATHS = /Users/czelenak/opt/build/todparsekit/include/;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CODE_SIGN_FLAGS = "";
-				OTHER_LDFLAGS = (
-					"-whole-archive",
-					"-licucore",
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos3.1.2;
@@ -568,12 +545,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /Users/czelenak/opt/build/todparsekit/include/;
-				OTHER_LDFLAGS = (
-					"-whole-archive",
-					"-licucore",
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.1.2;
 			};
