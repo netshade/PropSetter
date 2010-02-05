@@ -8,6 +8,25 @@ These expressions follow the basic form:
 
 ClassName[aSeriesOfExpressions].propertyThatWillBeChanged
 
+Expression operators include:
+Equals: =, ==, eq
+Not equals: !=, ne
+Less than: <, lt
+Greater than: >, gt
+Greater than, equals: >=, gte
+Less than, equals: <=, tle
+Contains: =>, contains
+
+You may create custom operators for use in expressions by registering them with the shared PropSetter object, like so:
+
+[[PropSetter sharedInstance] addTarget:self andSelector:@selector(customOperator:forLvalue:andRvalue:) forCustomOperator:@"soundex"];
+
+To use the custom operator, prefix the name you registered the operator as with an @ symbol, like so:
+
+NSString[self @soundex 'Lion']
+
+Registering a delegate method as a custom operator requires that the delegate method receive 3 arguments: the name of the custom operator being invoked (NSString *), the lvalue of the expression (id) and the rvalue of the expression (id).
+
 Expressions may be and'ed and or'ed to each other, like so:
 
 MyViewController[.title = 'Sports' and .dataSource.stale = true].staleIndicatorVisible
