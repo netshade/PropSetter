@@ -1,7 +1,7 @@
 @start = selectorOrValue;
 @symbols = '=' '==' '!=' '<=' '>=' '<' '>' '||' '&&' '=>';
 selectorOrValue = selectorExpr | literalValue | Empty;
-selectorExpr = className clause targetProperty{0,1};
+selectorExpr = (className clause? targetProperty{0,1});
 targetProperty = property;
 className = identifier;
 orStatement = andStatement orAndStatement*;
