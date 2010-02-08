@@ -102,7 +102,7 @@
 	PropSetterSelector * selector = [parser parse:sel];
 	currentState = PropSetterParserStateNone;
 	if(![selector className]){
-		PropSetterRuntimeError(@"No classname was specified for selector %@", sel);
+		PropSetterRuntimeError(@"Parse error for selector %@", sel);
 	} else {
 	}	
 	currentState = PropSetterParserStateNone;
