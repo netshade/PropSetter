@@ -146,6 +146,7 @@
 	for(NSString * p in keypaths){
 		[o addObserver:self forKeyPath:p options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) context:NULL];
 	}
+	[self applyRulesToObject:o];
 }
 
 -(void) stopObservingObject:(id)o {
