@@ -89,7 +89,7 @@ static inline NSString * NSStringToCamelCase(NSString * subject){
 	} else if([targetObject respondsToSelector:nonTraditionalSetter]){
 		[targetObject performSelector:nonTraditionalSetter withObject:value];
 	} else {
-		[NSException raise:@"Does not respond to method" format:@"Object %@ does not have a setter method for property %@", targetObject, mem];
+		PropSetterRuntimeError(@"Object %@ does not have a setter method for property %@ (%@)", targetObject, mem, [self name]);
 	}
 
 }
