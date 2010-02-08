@@ -62,6 +62,11 @@
 }
 
 
+-(void) testSuperclassComparisonWithoutClause {
+	STAssertTrue([[PropSetter sharedInstance] doesString:@"UIView" matchObject:l], @"should be true when using superclass");
+	STAssertFalse([[PropSetter sharedInstance] doesString:@"NSString" matchObject:l], @"should be true when using superclass");
+}
+
 -(void) testSuperclassComparison {
 	STAssertTrue([[PropSetter sharedInstance] doesString:@"UIView[]" matchObject:l], @"should be true when using superclass");
 }
@@ -69,6 +74,11 @@
 
 -(void) testClassComparison {
 	STAssertTrue([[PropSetter sharedInstance] doesString:@"UILabel[]" matchObject:l], @"should be true when using class");
+}
+
+-(void) testClassComparisonWithoutClause {
+	STAssertTrue([[PropSetter sharedInstance] doesString:@"UILabel" matchObject:l], @"should be true when using class");
+	STAssertFalse([[PropSetter sharedInstance] doesString:@"NSString" matchObject:l], @"should be true when using class");
 }
 
 -(void) testTextComparisonEquality {
@@ -206,6 +216,11 @@
 -(void) testPropertyExtraction {
 	[l setText:@"Foo"];
 	STAssertTrue([[[PropSetter sharedInstance] valueOfString:@"UILabel[.text = 'Foo'].text.length" forObject:l] intValue] == 3, @"property extraction is correct");
+}
+
+-(void) testPropertyExtractionWithoutClause {
+	[l setText:@"Foo"];
+	STAssertTrue([[[PropSetter sharedInstance] valueOfString:@"UILabel.text.length" forObject:l] intValue] == 3, @"property extraction is correct");
 }
 
 -(BOOL) customYesProperty:(NSString *)name lvalue:(id)l rvalue:(id)r {
