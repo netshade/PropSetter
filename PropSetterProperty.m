@@ -77,17 +77,7 @@ static inline NSString * NSStringToCamelCase(NSString * subject){
 	if([members count] > 1){
 		[object setValue:value forKeyPath:[self name]];
 	} else {
-		id targetObject = object;
-		NSString * mem = [members objectAtIndex:0];
-		SEL traditionalSetter = NSSelectorFromString([NSString stringWithFormat:@"set%@:", NSStringToCamelCase(mem)]);
-		SEL nonTraditionalSetter = NSSelectorFromString([NSString stringWithFormat:@"%@:", mem]);
-		if([targetObject respondsToSelector:traditionalSetter]){
-			[targetObject performSelector:traditionalSetter withObject:value];
-		} else if([targetObject respondsToSelector:nonTraditionalSetter]){
-			[targetObject performSelector:nonTraditionalSetter withObject:value];
-		} else {
-			PropSetterRuntimeError(@"Object %@ does not have a setter method for property %@ (%@)", targetObject, mem, [self name]);
-		}
+		[object setValue:value forKey:[self name]];
 	}
 
 }
