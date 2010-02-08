@@ -29,6 +29,7 @@
 
 #import "PropSetterManager.h"
 #import "PropSetter.h"
+#import "PropSetterError.h"
 
 @interface PropSetterInvocationRecord : NSObject
 {
@@ -116,7 +117,7 @@
 		} else if([o isKindOfClass:[NSString class]]){
 			[self addSelectorFromString:o withValue:[d objectForKey:o]];
 		} else {
-			[NSException raise:@"Error adding rule" format:@"Cannot add selector with object %@, it must be either a PropSetterSelector or NSString", o];
+			PropSetterRuntimeError(@"Cannot add selector with object %@, it must be either a PropSetterSelector or NSString", o);
 		}
 	}
 }
