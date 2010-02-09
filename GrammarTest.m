@@ -219,6 +219,8 @@
 	return NO;
 }
 
+
+
 -(id) customColorFunction:(NSString *)name arguments:(NSArray *)args {
 	NSAssert1([args count] == 1, @"Args for color must be 1, is %@", args);
 	NSNumber * sat = [args objectAtIndex:0];
@@ -243,14 +245,9 @@
 -(void) testCustomFunctionParse {
 	PropSetter * ps = [[PropSetter alloc] init];
 	[ps addTarget:self andSelector:@selector(customColorFunction:arguments:) forCustomFunction:@"color"];
-	STAssertTrue([[ps valueOfExpression:@"@color(1)"] isEqual:[UIColor colorWithWhite:1.0 alpha:1.0]], @"Must be equal colors");
+	STAssertTrue([[[ps valueOfExpression:@"@color(1)"] valueWithObject:nil] isEqual:[UIColor colorWithWhite:1.0 alpha:1.0]], @"Must be equal colors");
+	[ps release];
 }
-
--(void) testValueExpressionReturnsNilIfNotValidValueExpression {
-	PropSetter * ps = [[PropSetter alloc] init];
-	STAssertTrue([ps valueOfExpression:@"ThisShouldJustBeAString"] == nil, @"Must return nil if not a literal value");
-}
-
 
 
 - (void) tearDown {
