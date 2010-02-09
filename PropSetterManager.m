@@ -30,30 +30,7 @@
 #import "PropSetterManager.h"
 #import "PropSetter.h"
 #import "PropSetterError.h"
-
-@interface PropSetterInvocationRecord : NSObject
-{
-	SEL selector;
-	id target;
-}
-
-@property(readwrite, retain) id target;
-@property(readwrite, assign) SEL selector;
-
-@end
-
-@implementation PropSetterInvocationRecord
-
-@synthesize target;
-@synthesize selector;
-
-
--(void) dealloc {
-	[target release];
-	[super dealloc];
-}
-
-@end
+#import "PropSetterInvocationRecord.h"
 
 
 
@@ -106,25 +83,33 @@
 -(void) addSelector:(PropSetterSelector *)sel withValue:(id)val {
 	@synchronized(self){
 		[selectors setObject:val forKey:sel];
-		[keypaths addObjectsFromArray:[[sel clause] affectedKeypaths]];
-	}
-}
-
--(void) addSelectorsFromDictionary:(NSDictionary *)d {
-	for(id o in d){
-		if([o isKindOfClass:[PropSetterSelector class]]){
-			[self addSelector:o withValue:[d objectForKey:o]];
-		} else if([o isKindOfClass:[NSString class]]){
-			[self addSelectorFromString:o withValue:[d objectForKey:o]];
-		} else {
-			PropSetterRuntimeError(@"Cannot add selector with object %@, it must be either a PropSetterSelector or NSString", o);
+		NSArray * a = [[sel clause] affectedKeypaths];
+		for(NSString * kp in a){
+			if(![keypaths containsObject:kp]){
+				[keypaths addObject:kp];
+			}
 		}
 	}
 }
 
+-(void) addSelectorsFromDictionary:(NSDictionary *)d {
+	[self addSelectorsFromDictionary:d parsingStringsAsValues:NO];
+}
+
 -(void) addSelectorsFromPlist:(NSString *)filename {
+	[self addSelectorsFromPlist:filename parsingStringsAsValues:NO];
+}
+
+-(void) addSelectorsFromDictionary:(NSDictionary *)d parsingStringsAsValues:(BOOL)b {
+	NSDictionary * res = [[PropSetter sharedInstance] selectorsAndValuesFromDictionary:d parsingValues:b];
+	for(PropSetterSelector * sel in res){
+		[self addSelector:sel withValue:[res objectForKey:sel]];
+	}
+}
+
+-(void) addSelectorsFromPlist:(NSString *)filename  parsingStringsAsValues:(BOOL)b {
 	NSDictionary * d = [[NSDictionary alloc] initWithContentsOfFile:filename];
-	[self addSelectorsFromDictionary:d];
+	[self addSelectorsFromDictionary:d parsingStringsAsValues:b];
 	[d release];
 }
 

@@ -48,6 +48,9 @@
 -(void) addSelectorsFromDictionary:(NSDictionary *)d;
 -(void) addSelectorsFromPlist:(NSString *)filename;
 
+-(void) addSelectorsFromDictionary:(NSDictionary *)d parsingStringsAsValues:(BOOL)b;
+-(void) addSelectorsFromPlist:(NSString *)d  parsingStringsAsValues:(BOOL)b;
+
 -(void) reset;
 
 -(void) beginObservingObject:(id)o;
