@@ -145,18 +145,6 @@
 	STAssertTrue([[PropSetter sharedInstance] doesString:@"UILabel[500 >= 3]" matchObject:l], @"should be true with a trivial numeric comparison");
 }
 
-/*
- 
- LANGUAGE NO LONGER SUPPORTS THIS FORM
- 
--(void) testBooleanComparisonTrue{
-	STAssertTrue([[PropSetter sharedInstance] doesString:@"UILabel[true]" matchObject:l], @"should be true with a trivial boolean true");
-}
-
--(void) testBooleanComparisonFalse {
-	STAssertFalse([[PropSetter sharedInstance] doesString:@"UILabel[false]" matchObject:l], @"should be true with a trivial boolean false");
-}
-*/
 -(void) testSelfKeyword {
 	STAssertTrue([[PropSetter sharedInstance] doesString:@"NSString[self = 'Foo']" matchObject:s], @"should be true with a self comparison");
 }
@@ -231,6 +219,13 @@
 	return NO;
 }
 
+-(id) customColorFunction:(NSString *)name arguments:(NSArray *)args {
+	NSAssert1([args count] == 1, @"Args for color must be 1, is %@", args);
+	NSNumber * sat = [args objectAtIndex:0];
+	UIColor * c = [UIColor colorWithWhite:[sat floatValue] alpha:1.0];
+	return c;
+}
+
 -(void) testCustomYesProperty {
 	PropSetter * ps = [[PropSetter alloc] init];
 	[ps addTarget:self andSelector:@selector(customYesProperty:lvalue:rvalue:) forCustomOperator:@"yes"];
@@ -243,6 +238,17 @@
 	[ps addTarget:self andSelector:@selector(customNoProperty:lvalue:rvalue:) forCustomOperator:@"no"];
 	STAssertFalse([ps doesString:@"NSObject[1 @no 1]" matchObject:@"should evaluate yes"], @"should be true");
 	[ps release];
+}
+
+-(void) testCustomFunctionParse {
+	PropSetter * ps = [[PropSetter alloc] init];
+	[ps addTarget:self andSelector:@selector(customColorFunction:arguments:) forCustomFunction:@"color"];
+	STAssertTrue([[ps valueOfExpression:@"@color(1)"] isEqual:[UIColor colorWithWhite:1.0 alpha:1.0]], @"Must be equal colors");
+}
+
+-(void) testValueExpressionReturnsNilIfNotValidValueExpression {
+	PropSetter * ps = [[PropSetter alloc] init];
+	STAssertTrue([ps valueOfExpression:@"ThisShouldJustBeAString"] == nil, @"Must return nil if not a literal value");
 }
 
 
