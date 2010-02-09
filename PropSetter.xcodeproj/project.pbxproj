@@ -22,6 +22,12 @@
 		BE4FA2911118EE3100DBB98A /* PropSetterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */; };
 		BE4FA2921118EE3100DBB98A /* PropSetterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */; };
 		BE4FA2BF1119C9C700DBB98A /* PropSetterManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */; };
+		BE59B7DE11209441006598A7 /* PropSetterFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59B7DD11209441006598A7 /* PropSetterFunction.m */; };
+		BE59B7DF11209441006598A7 /* PropSetterFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = BE59B7DC11209441006598A7 /* PropSetterFunction.h */; };
+		BE59B7E011209441006598A7 /* PropSetterFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59B7DD11209441006598A7 /* PropSetterFunction.m */; };
+		BE59B80911209FD8006598A7 /* PropSetterInvocationRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59B80811209FD8006598A7 /* PropSetterInvocationRecord.m */; };
+		BE59B80A11209FD8006598A7 /* PropSetterInvocationRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = BE59B80711209FD8006598A7 /* PropSetterInvocationRecord.h */; };
+		BE59B80B11209FD8006598A7 /* PropSetterInvocationRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59B80811209FD8006598A7 /* PropSetterInvocationRecord.m */; };
 		BE6951EE1118A8930096FE6A /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6951ED1118A8930096FE6A /* PropSetterOperator.m */; };
 		BE6951EF1118A8930096FE6A /* PropSetterOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6951EC1118A8930096FE6A /* PropSetterOperator.h */; };
 		BE6951F01118A8930096FE6A /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6951ED1118A8930096FE6A /* PropSetterOperator.m */; };
@@ -113,6 +119,10 @@
 		BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterManager.h; sourceTree = "<group>"; };
 		BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterManager.m; sourceTree = "<group>"; };
 		BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterManagerTest.m; sourceTree = "<group>"; };
+		BE59B7DC11209441006598A7 /* PropSetterFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterFunction.h; sourceTree = "<group>"; };
+		BE59B7DD11209441006598A7 /* PropSetterFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterFunction.m; sourceTree = "<group>"; };
+		BE59B80711209FD8006598A7 /* PropSetterInvocationRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterInvocationRecord.h; sourceTree = "<group>"; };
+		BE59B80811209FD8006598A7 /* PropSetterInvocationRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterInvocationRecord.m; sourceTree = "<group>"; };
 		BE6951EC1118A8930096FE6A /* PropSetterOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterOperator.h; sourceTree = "<group>"; };
 		BE6951ED1118A8930096FE6A /* PropSetterOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterOperator.m; sourceTree = "<group>"; };
 		BE6D662E11177B4C008D34BC /* PropSetterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterTest.m; sourceTree = "<group>"; };
@@ -238,6 +248,10 @@
 				BE6951ED1118A8930096FE6A /* PropSetterOperator.m */,
 				BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */,
 				BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */,
+				BE59B7DC11209441006598A7 /* PropSetterFunction.h */,
+				BE59B7DD11209441006598A7 /* PropSetterFunction.m */,
+				BE59B80711209FD8006598A7 /* PropSetterInvocationRecord.h */,
+				BE59B80811209FD8006598A7 /* PropSetterInvocationRecord.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -303,6 +317,8 @@
 				BEE1E6A110FE5B9000FCD2F4 /* PropSetterError.h in Headers */,
 				BE6951EF1118A8930096FE6A /* PropSetterOperator.h in Headers */,
 				BE4FA2911118EE3100DBB98A /* PropSetterManager.h in Headers */,
+				BE59B7DF11209441006598A7 /* PropSetterFunction.h in Headers */,
+				BE59B80A11209FD8006598A7 /* PropSetterInvocationRecord.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +451,8 @@
 				BE6951EE1118A8930096FE6A /* PropSetterOperator.m in Sources */,
 				BE4FA2901118EE3100DBB98A /* PropSetterManager.m in Sources */,
 				BE4FA2BF1119C9C700DBB98A /* PropSetterManagerTest.m in Sources */,
+				BE59B7DE11209441006598A7 /* PropSetterFunction.m in Sources */,
+				BE59B80911209FD8006598A7 /* PropSetterInvocationRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +471,8 @@
 				BEE1E69210FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */,
 				BE6951F01118A8930096FE6A /* PropSetterOperator.m in Sources */,
 				BE4FA2921118EE3100DBB98A /* PropSetterManager.m in Sources */,
+				BE59B7E011209441006598A7 /* PropSetterFunction.m in Sources */,
+				BE59B80B11209FD8006598A7 /* PropSetterInvocationRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
