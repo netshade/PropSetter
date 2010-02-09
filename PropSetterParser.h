@@ -31,6 +31,7 @@
 #import <ParseKit/ParseKit.h>
 #import "PropSetterSelector.h"
 #import "PropSetterFunction.h"
+#import "PropSetterObjectWithValue.h"
 
 typedef enum {
 	PropSetterParserStateNone = 0,
@@ -65,5 +66,5 @@ typedef enum {
 @property(readwrite, assign) id<PropSetterFunctionInvocationDelegate> functionDelegate;
 
 -(PropSetterSelector *) selectorFromExpression:(NSString *)sel;
--(id) valueFromExpression:(NSString *)sel;
+-(id<PropSetterObjectWithValue>) valueFromExpression:(NSString *)sel;
 @end

@@ -109,12 +109,12 @@
 	}
 }
 
--(id) valueFromExpression:(NSString *)sel {
+-(id<PropSetterObjectWithValue>) valueFromExpression:(NSString *)sel {
 	currentState = PropSetterParserStateValue;
 	id o = [parser parse:sel];
 	id val = nil;
 	if([o conformsToProtocol:@protocol(PropSetterObjectWithValue)]){
-		val = [o valueWithObject:nil];
+		val = o;
 	}
 	return val;
 }
