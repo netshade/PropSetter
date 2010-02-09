@@ -38,6 +38,7 @@
 #import <OCMock/OCMConstraint.h>
 #import "GTMSenTestCase.h"
 #import "PropSetterManager.h"
+#import "PropSetter.h"
 
 @interface PropSetterManagerTest : GTMTestCase {
 	UILabel * label;
@@ -99,6 +100,31 @@
 	STAssertTrue([[label text] isEqualToString:@"Foo"], @"should be foo");
 	[mgr stopObservingObject:label];
 }
+
+-(id) customSelfPassedFunction:(NSString *)name arguments:(NSArray *)args {
+	NSAssert([[args objectAtIndex:0] isKindOfClass:[UILabel class]] && [args count] == 1,@"Object must be a UILabel");
+	UILabel * l = [args objectAtIndex:0];
+	NSString * s = [NSString stringWithFormat:@"%@Bar", [l text]];
+	return s;
+}
+
+
+-(void) testCustomFunctionsHavingValueOfPropertyPassedAsArgument {
+	[label setText:@"Foo"];
+	PropSetterManager * mgr = [PropSetterManager manager];
+	NSDictionary * rule = [[NSDictionary alloc] initWithObjectsAndKeys:@"@alterself(self)", @"NSObject[.text = 'Foo'].text",
+						   @"@alterself(self)", @"NSObject[.text = 'Bar'].text",
+						   nil];
+	[mgr addSelectorsFromDictionary:rule parsingStringsAsValues:YES];
+	[[PropSetter sharedInstance] addTarget:self andSelector:@selector(customSelfPassedFunction:arguments:) forCustomFunction:@"alterself"];
+	[mgr beginObservingObject:label];
+
+	STAssertTrue([[label text] isEqualToString:@"FooBar"], @"Must create value based on existing value");
+	[label setText:@"Bar"];
+	STAssertTrue([[label text] isEqualToString:@"BarBar"], @"Must create value based on existing value");
+}
+
+
 
 - (void) tearDown {
 	[label release];
