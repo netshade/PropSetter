@@ -28,12 +28,16 @@
 
 
 #import <Foundation/Foundation.h>
-#import "PropSetterParser.h"
+#import "PropSetterSelector.h"
 #import "PropSetterTypes.h"
+#import "PropSetterFunction.h"
 
-@interface PropSetter : NSObject<PropSetterOperatorCustomDelegate> {
+@class PropSetterParser;
+
+@interface PropSetter : NSObject<PropSetterOperatorCustomDelegate, PropSetterFunctionInvocationDelegate> {
 	BOOL debug;
 	NSMutableDictionary * customOperators;
+	NSMutableDictionary * customFunctions;
 }
 
 @property(readwrite, assign) BOOL debug;
@@ -41,9 +45,14 @@
 +(id) sharedInstance;
 
 -(PropSetterSelector *) selectorFromString:(NSString *)s;
+-(NSArray *) selectorsFromArray:(NSArray *)s;
+-(NSDictionary *) selectorsAndValuesFromDictionary:(NSDictionary *)d parsingValues:(BOOL)b;
 
 -(void) addTarget:(id)target andSelector:(SEL)selector forCustomOperator:(NSString *)name;
 -(void) addDelegate:(id<PropSetterOperatorCustomDelegate>)del forCustomOperator:(NSString *)name;
+
+-(void) addTarget:(id)target andSelector:(SEL)selector forCustomFunction:(NSString *)name;
+-(void) addDelegate:(id<PropSetterFunctionInvocationDelegate>)del forCustomFunction:(NSString *)name;
 
 -(NSArray *) objectsFromArray:(NSArray *)a matchingSelector:(PropSetterSelector *)selector;
 -(NSArray *) setValue:(id)value forObjectsInArray:(NSArray *)a matchingSelector:(PropSetterSelector *)selector;
@@ -61,7 +70,7 @@
 -(BOOL) doesString:(NSString *)s matchObject:(id)object;
 -(id) valueOfString:(NSString *)s forObject:(id)object;
 
-
+-(id) valueOfExpression:(NSString *)s;
 
 
 @end
