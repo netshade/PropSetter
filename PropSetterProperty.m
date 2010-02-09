@@ -74,10 +74,14 @@ static inline NSString * NSStringToCamelCase(NSString * subject){
 }
 
 -(void) setPropertyOfObject:(id)object toValue:(id)value {
+	id v = value;
+	if([value conformsToProtocol:@protocol(PropSetterObjectWithValue)]){
+		v = [value valueWithObject:object];
+	}
 	if([members count] > 1){
-		[object setValue:value forKeyPath:[self name]];
+		[object setValue:v forKeyPath:[self name]];
 	} else {
-		[object setValue:value forKey:[self name]];
+		[object setValue:v forKey:[self name]];
 	}
 
 }
