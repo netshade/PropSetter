@@ -31,6 +31,7 @@
 #import "PropSetterSelector.h"
 #import "PropSetterTypes.h"
 #import "PropSetterFunction.h"
+#import "PropSetterObjectWithValue.h"
 
 @class PropSetterParser;
 
@@ -70,7 +71,7 @@
 -(BOOL) doesString:(NSString *)s matchObject:(id)object;
 -(id) valueOfString:(NSString *)s forObject:(id)object;
 
--(id) valueOfExpression:(NSString *)s;
+-(id<PropSetterObjectWithValue>) valueOfExpression:(NSString *)s;
 
 
 @end

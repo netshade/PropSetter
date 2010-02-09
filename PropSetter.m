@@ -32,6 +32,7 @@
 #import "PropSetterInvocationRecord.h"
 
 
+
 @implementation PropSetter
 
 @synthesize debug;
@@ -119,8 +120,8 @@
 
 #pragma mark Selector methods
 
--(id) valueOfExpression:(NSString *)s {
-	id result = s;
+-(id<PropSetterObjectWithValue>) valueOfExpression:(NSString *)s {
+	id<PropSetterObjectWithValue> result = s;
 	PropSetterParser * parser = [[PropSetterParser alloc] init];
 	[parser setFunctionDelegate:self];
 	result = [parser valueFromExpression:s];
@@ -153,7 +154,7 @@
 	for(NSString * sel in d){
 		id v = [d objectForKey:sel];
 		if([v isKindOfClass:[NSString class]] && [v hasPrefix:@"@"]){
-			id res = [p valueFromExpression:v];
+			id<PropSetterObjectWithValue> res = [p valueFromExpression:v];
 			if(res){
 				v = res;
 			}
