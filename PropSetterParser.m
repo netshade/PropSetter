@@ -78,6 +78,7 @@
 @implementation PropSetterParser
 
 @synthesize debug;
+@synthesize functionDelegate;
 
 -(id) init {
 	if(self = [super init]){
@@ -99,14 +100,23 @@
 
 -(PropSetterSelector *) selectorFromExpression:(NSString *)sel {
 	currentState = PropSetterParserStateSelector;
-	PropSetterSelector * selector = [parser parse:sel];
-	currentState = PropSetterParserStateNone;
-	if(![selector className]){
+	id selector = [parser parse:sel];
+	if(!selector || ![selector isKindOfClass:[PropSetterSelector class]]){
 		PropSetterRuntimeError(@"Parse error for selector %@", sel);
 	} else {
-	}	
-	currentState = PropSetterParserStateNone;
-	return selector;
+		[selector setSelectorString:sel];
+		return selector;
+	}
+}
+
+-(id) valueFromExpression:(NSString *)sel {
+	currentState = PropSetterParserStateValue;
+	id o = [parser parse:sel];
+	id val = nil;
+	if([o conformsToProtocol:@protocol(PropSetterObjectWithValue)]){
+		val = [o valueWithObject:nil];
+	}
+	return val;
 }
 
 
@@ -148,7 +158,7 @@
 	[self debugMatch:@"className" withAssembly:a];
 	NSString * className = [[a pop] stringValue];
 	if(currentState != PropSetterParserStateSelector){
-		PropSetterRuntimeError(@"Cannot specify a class name (%@) when parsing a value", className);
+		return;
 	} else {
 		PropSetterIdentifier * ident = [[[PropSetterIdentifier alloc] init] autorelease];
 		[ident setName:className];
@@ -181,6 +191,21 @@
 	[e setRvalue:r];
 	[e setOp:tok];
 	[a push:e];
+}
+
+-(void) didMatchObjFunc:(PKAssembly *)a {
+	id obj = [[a stack] lastObject];
+	PropSetterFunction * func = [[[PropSetterFunction alloc] init] autorelease];
+	while([obj conformsToProtocol:@protocol(PropSetterObjectWithValue)]){
+		[func addArgument:obj];
+		[a pop];
+		obj = [[a stack] lastObject];
+	}
+	PKToken * ident = (PKToken *) obj;
+	[func setName:[ident stringValue]];
+	[func setFunctionDelegate:functionDelegate];
+	[a pop];
+	[a push:func];
 }
 
 -(void) didMatchExpr:(PKAssembly *)a {
