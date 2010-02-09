@@ -36,6 +36,7 @@
 @synthesize className;
 @synthesize clause;
 @synthesize property;
+@synthesize selectorString;
 
 -(id) init {
 	if(self = [super init]){
@@ -67,6 +68,7 @@
 }
 
 -(void) dealloc {
+	[selectorString release];
 	[property release];
 	[className release];
 	[clause release];

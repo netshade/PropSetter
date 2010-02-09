@@ -38,11 +38,13 @@
 	NSString * className;
 	PropSetterClause * clause;
 	PropSetterProperty * property;
+	NSString * selectorString;
 }
 
 @property(readwrite, retain) NSString * className;
 @property(readwrite, retain) PropSetterClause * clause;
 @property(readwrite, retain) PropSetterProperty * property;
+@property(readwrite, copy) NSString * selectorString;
 
 -(BOOL) evaluateWithObject:(id)object andOperatorDelegate:(id<PropSetterOperatorCustomDelegate>)del;
 -(PropSetterExpression *) lastClauseExpression;
