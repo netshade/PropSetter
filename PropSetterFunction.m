@@ -44,7 +44,7 @@
 }
 
 -(void) addArgument:(id<PropSetterObjectWithValue>) arg {
-	[arguments addObject:arg];
+	[arguments insertObject:arg atIndex:0];
 }
 
 -(id) valueWithObject:(id)object {
