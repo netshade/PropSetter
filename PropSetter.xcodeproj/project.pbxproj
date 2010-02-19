@@ -11,58 +11,57 @@
 		BD80A3EC0F8A69980067878C /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
 		BD80A3F90F8A6A180067878C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
 		BD80A6F20F8C87A60067878C /* UnitTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */; };
-		BD80A79A0F8D2EA50067878C /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */; };
-		BD80A79B0F8D2EA50067878C /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */; };
-		BD80A79C0F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */; };
-		BE1871B210F378A200C8D044 /* PropSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1871B110F378A200C8D044 /* PropSetter.m */; };
-		BE1871B310F378A200C8D044 /* PropSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1871B010F378A200C8D044 /* PropSetter.h */; };
-		BE1871B410F378A200C8D044 /* PropSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1871B110F378A200C8D044 /* PropSetter.m */; };
 		BE1871DA10F3818D00C8D044 /* selector_grammar.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1871D910F3818D00C8D044 /* selector_grammar.h */; };
-		BE4FA2901118EE3100DBB98A /* PropSetterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */; };
-		BE4FA2911118EE3100DBB98A /* PropSetterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */; };
-		BE4FA2921118EE3100DBB98A /* PropSetterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */; };
-		BE4FA2BF1119C9C700DBB98A /* PropSetterManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */; };
-		BE59B7DE11209441006598A7 /* PropSetterFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59B7DD11209441006598A7 /* PropSetterFunction.m */; };
-		BE59B7DF11209441006598A7 /* PropSetterFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = BE59B7DC11209441006598A7 /* PropSetterFunction.h */; };
-		BE59B7E011209441006598A7 /* PropSetterFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59B7DD11209441006598A7 /* PropSetterFunction.m */; };
-		BE59B80911209FD8006598A7 /* PropSetterInvocationRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59B80811209FD8006598A7 /* PropSetterInvocationRecord.m */; };
-		BE59B80A11209FD8006598A7 /* PropSetterInvocationRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = BE59B80711209FD8006598A7 /* PropSetterInvocationRecord.h */; };
-		BE59B80B11209FD8006598A7 /* PropSetterInvocationRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59B80811209FD8006598A7 /* PropSetterInvocationRecord.m */; };
-		BE6951EE1118A8930096FE6A /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6951ED1118A8930096FE6A /* PropSetterOperator.m */; };
-		BE6951EF1118A8930096FE6A /* PropSetterOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6951EC1118A8930096FE6A /* PropSetterOperator.h */; };
-		BE6951F01118A8930096FE6A /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6951ED1118A8930096FE6A /* PropSetterOperator.m */; };
-		BE6D663011177B4C008D34BC /* PropSetterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D662E11177B4C008D34BC /* PropSetterTest.m */; };
+		BE5F17AB112EDDE400EC50B2 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17A7112EDDE400EC50B2 /* GTMIPhoneUnitTestDelegate.m */; };
+		BE5F17AC112EDDE400EC50B2 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17A8112EDDE400EC50B2 /* GTMIPhoneUnitTestMain.m */; };
+		BE5F17AD112EDDE400EC50B2 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17AA112EDDE400EC50B2 /* GTMSenTestCase.m */; };
+		BE5F17B1112EDE0000EC50B2 /* GrammarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17AE112EDE0000EC50B2 /* GrammarTest.m */; };
+		BE5F17B2112EDE0000EC50B2 /* PropSetterManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17AF112EDE0000EC50B2 /* PropSetterManagerTest.m */; };
+		BE5F17B3112EDE0000EC50B2 /* PropSetterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17B0112EDE0000EC50B2 /* PropSetterTest.m */; };
+		BE5F17CA112EE25200EC50B2 /* PropSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17BD112EE25200EC50B2 /* PropSetter.m */; };
+		BE5F17CB112EE25200EC50B2 /* PropSetterClause.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17BE112EE25200EC50B2 /* PropSetterClause.m */; };
+		BE5F17CC112EE25200EC50B2 /* PropSetterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17BF112EE25200EC50B2 /* PropSetterExpression.m */; };
+		BE5F17CD112EE25200EC50B2 /* PropSetterFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C0112EE25200EC50B2 /* PropSetterFunction.m */; };
+		BE5F17CE112EE25200EC50B2 /* PropSetterIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C1112EE25200EC50B2 /* PropSetterIdentifier.m */; };
+		BE5F17CF112EE25200EC50B2 /* PropSetterInvocationRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C2112EE25200EC50B2 /* PropSetterInvocationRecord.m */; };
+		BE5F17D0112EE25200EC50B2 /* PropSetterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C3112EE25200EC50B2 /* PropSetterManager.m */; };
+		BE5F17D1112EE25200EC50B2 /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C4112EE25200EC50B2 /* PropSetterOperator.m */; };
+		BE5F17D2112EE25200EC50B2 /* PropSetterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C5112EE25200EC50B2 /* PropSetterParser.m */; };
+		BE5F17D3112EE25200EC50B2 /* PropSetterProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C6112EE25200EC50B2 /* PropSetterProperty.m */; };
+		BE5F17D4112EE25200EC50B2 /* PropSetterSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C7112EE25200EC50B2 /* PropSetterSelector.m */; };
+		BE5F17D5112EE25200EC50B2 /* PropSetterSelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C8112EE25200EC50B2 /* PropSetterSelfReference.m */; };
+		BE5F17D6112EE25200EC50B2 /* PropSetterValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C9112EE25200EC50B2 /* PropSetterValue.m */; };
+		BE5F17D7112EE25200EC50B2 /* PropSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17BD112EE25200EC50B2 /* PropSetter.m */; };
+		BE5F17D8112EE25200EC50B2 /* PropSetterClause.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17BE112EE25200EC50B2 /* PropSetterClause.m */; };
+		BE5F17D9112EE25200EC50B2 /* PropSetterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17BF112EE25200EC50B2 /* PropSetterExpression.m */; };
+		BE5F17DA112EE25200EC50B2 /* PropSetterFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C0112EE25200EC50B2 /* PropSetterFunction.m */; };
+		BE5F17DB112EE25200EC50B2 /* PropSetterIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C1112EE25200EC50B2 /* PropSetterIdentifier.m */; };
+		BE5F17DC112EE25200EC50B2 /* PropSetterInvocationRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C2112EE25200EC50B2 /* PropSetterInvocationRecord.m */; };
+		BE5F17DD112EE25200EC50B2 /* PropSetterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C3112EE25200EC50B2 /* PropSetterManager.m */; };
+		BE5F17DE112EE25200EC50B2 /* PropSetterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C4112EE25200EC50B2 /* PropSetterOperator.m */; };
+		BE5F17DF112EE25200EC50B2 /* PropSetterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C5112EE25200EC50B2 /* PropSetterParser.m */; };
+		BE5F17E0112EE25200EC50B2 /* PropSetterProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C6112EE25200EC50B2 /* PropSetterProperty.m */; };
+		BE5F17E1112EE25200EC50B2 /* PropSetterSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C7112EE25200EC50B2 /* PropSetterSelector.m */; };
+		BE5F17E2112EE25200EC50B2 /* PropSetterSelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C8112EE25200EC50B2 /* PropSetterSelfReference.m */; };
+		BE5F17E3112EE25200EC50B2 /* PropSetterValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F17C9112EE25200EC50B2 /* PropSetterValue.m */; };
+		BE5F17F4112EE26300EC50B2 /* PropSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17E4112EE26300EC50B2 /* PropSetter.h */; };
+		BE5F17F5112EE26300EC50B2 /* PropSetterClause.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17E5112EE26300EC50B2 /* PropSetterClause.h */; };
+		BE5F17F6112EE26300EC50B2 /* PropSetterError.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17E6112EE26300EC50B2 /* PropSetterError.h */; };
+		BE5F17F7112EE26300EC50B2 /* PropSetterExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17E7112EE26300EC50B2 /* PropSetterExpression.h */; };
+		BE5F17F8112EE26300EC50B2 /* PropSetterFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17E8112EE26300EC50B2 /* PropSetterFunction.h */; };
+		BE5F17F9112EE26300EC50B2 /* PropSetterIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17E9112EE26300EC50B2 /* PropSetterIdentifier.h */; };
+		BE5F17FA112EE26300EC50B2 /* PropSetterInvocationRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17EA112EE26300EC50B2 /* PropSetterInvocationRecord.h */; };
+		BE5F17FB112EE26300EC50B2 /* PropSetterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17EB112EE26300EC50B2 /* PropSetterManager.h */; };
+		BE5F17FC112EE26300EC50B2 /* PropSetterObjectWithValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17EC112EE26300EC50B2 /* PropSetterObjectWithValue.h */; };
+		BE5F17FD112EE26300EC50B2 /* PropSetterOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17ED112EE26300EC50B2 /* PropSetterOperator.h */; };
+		BE5F17FE112EE26300EC50B2 /* PropSetterParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17EE112EE26300EC50B2 /* PropSetterParser.h */; };
+		BE5F17FF112EE26300EC50B2 /* PropSetterProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17EF112EE26300EC50B2 /* PropSetterProperty.h */; };
+		BE5F1800112EE26300EC50B2 /* PropSetterSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17F0112EE26300EC50B2 /* PropSetterSelector.h */; };
+		BE5F1801112EE26300EC50B2 /* PropSetterSelfReference.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17F1112EE26300EC50B2 /* PropSetterSelfReference.h */; };
+		BE5F1802112EE26300EC50B2 /* PropSetterTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17F2112EE26300EC50B2 /* PropSetterTypes.h */; };
+		BE5F1803112EE26300EC50B2 /* PropSetterValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F17F3112EE26300EC50B2 /* PropSetterValue.h */; };
 		BEB9A79110F535230094D27C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB9A79010F535230094D27C /* UIKit.framework */; };
 		BEB9A79510F535300094D27C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB9A79410F535300094D27C /* CoreGraphics.framework */; };
-		BEB9A7F410F53CD80094D27C /* PropSetterParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB9A7F210F53CD80094D27C /* PropSetterParser.h */; };
-		BEB9A7F510F53CD80094D27C /* PropSetterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB9A7F310F53CD80094D27C /* PropSetterParser.m */; };
-		BEB9A7F610F53CD80094D27C /* PropSetterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB9A7F310F53CD80094D27C /* PropSetterParser.m */; };
-		BEE1E67010FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E66F10FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h */; };
-		BEE1E67310FE5A6900FCD2F4 /* PropSetterExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E67110FE5A6900FCD2F4 /* PropSetterExpression.h */; };
-		BEE1E67410FE5A6900FCD2F4 /* PropSetterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67210FE5A6900FCD2F4 /* PropSetterExpression.m */; };
-		BEE1E67510FE5A6900FCD2F4 /* PropSetterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67210FE5A6900FCD2F4 /* PropSetterExpression.m */; };
-		BEE1E67810FE5A9700FCD2F4 /* PropSetterClause.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E67610FE5A9700FCD2F4 /* PropSetterClause.h */; };
-		BEE1E67910FE5A9700FCD2F4 /* PropSetterClause.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67710FE5A9700FCD2F4 /* PropSetterClause.m */; };
-		BEE1E67A10FE5A9700FCD2F4 /* PropSetterClause.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67710FE5A9700FCD2F4 /* PropSetterClause.m */; };
-		BEE1E67D10FE5AAD00FCD2F4 /* PropSetterIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E67B10FE5AAD00FCD2F4 /* PropSetterIdentifier.h */; };
-		BEE1E67E10FE5AAD00FCD2F4 /* PropSetterIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67C10FE5AAD00FCD2F4 /* PropSetterIdentifier.m */; };
-		BEE1E67F10FE5AAD00FCD2F4 /* PropSetterIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E67C10FE5AAD00FCD2F4 /* PropSetterIdentifier.m */; };
-		BEE1E68210FE5AC300FCD2F4 /* PropSetterSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E68010FE5AC300FCD2F4 /* PropSetterSelector.h */; };
-		BEE1E68310FE5AC300FCD2F4 /* PropSetterSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68110FE5AC300FCD2F4 /* PropSetterSelector.m */; };
-		BEE1E68410FE5AC300FCD2F4 /* PropSetterSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68110FE5AC300FCD2F4 /* PropSetterSelector.m */; };
-		BEE1E68710FE5AE500FCD2F4 /* PropSetterValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E68510FE5AE500FCD2F4 /* PropSetterValue.h */; };
-		BEE1E68810FE5AE500FCD2F4 /* PropSetterValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68610FE5AE500FCD2F4 /* PropSetterValue.m */; };
-		BEE1E68910FE5AE500FCD2F4 /* PropSetterValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68610FE5AE500FCD2F4 /* PropSetterValue.m */; };
-		BEE1E68C10FE5B0100FCD2F4 /* PropSetterSelfReference.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E68A10FE5B0100FCD2F4 /* PropSetterSelfReference.h */; };
-		BEE1E68D10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68B10FE5B0100FCD2F4 /* PropSetterSelfReference.m */; };
-		BEE1E68E10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E68B10FE5B0100FCD2F4 /* PropSetterSelfReference.m */; };
-		BEE1E69110FE5B1400FCD2F4 /* PropSetterProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E68F10FE5B1400FCD2F4 /* PropSetterProperty.h */; };
-		BEE1E69210FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E69010FE5B1400FCD2F4 /* PropSetterProperty.m */; };
-		BEE1E69310FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE1E69010FE5B1400FCD2F4 /* PropSetterProperty.m */; };
-		BEE1E69F10FE5B5600FCD2F4 /* PropSetterTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E69E10FE5B5600FCD2F4 /* PropSetterTypes.h */; };
-		BEE1E6A110FE5B9000FCD2F4 /* PropSetterError.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE1E6A010FE5B9000FCD2F4 /* PropSetterError.h */; };
-		BEEEFA9010F2773400767C37 /* GrammarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEEFA8F10F2773400767C37 /* GrammarTest.m */; };
-		BEEEFBA010F288B400767C37 /* selector.grammar in Resources */ = {isa = PBXBuildFile; fileRef = BEEEFB9F10F288B400767C37 /* selector.grammar */; };
 		BEEEFBF710F28DA100767C37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEEFBF610F28DA100767C37 /* Foundation.framework */; };
 		BEEEFC8610F2999700767C37 /* libparsekit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEEFC8510F2999700767C37 /* libparsekit.a */; };
 		BEEEFC8710F2999700767C37 /* libparsekit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEEFC8510F2999700767C37 /* libparsekit.a */; };
@@ -106,49 +105,48 @@
 		BD80A3A20F894C7F0067878C /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80A3EB0F8A69980067878C /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
 		BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = SOURCE_ROOT; };
-		BD80A7940F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = SOURCE_ROOT; };
-		BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = SOURCE_ROOT; };
-		BD80A7960F8D2EA50067878C /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = SOURCE_ROOT; };
-		BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = SOURCE_ROOT; };
-		BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = SOURCE_ROOT; };
-		BD80A7990F8D2EA50067878C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = SOURCE_ROOT; };
 		BD80A79E0F8D3B310067878C /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunIPhoneUnitTest.sh; sourceTree = SOURCE_ROOT; };
-		BE1871B010F378A200C8D044 /* PropSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetter.h; sourceTree = "<group>"; };
-		BE1871B110F378A200C8D044 /* PropSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetter.m; sourceTree = "<group>"; };
 		BE1871D910F3818D00C8D044 /* selector_grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selector_grammar.h; sourceTree = "<group>"; };
-		BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterManager.h; sourceTree = "<group>"; };
-		BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterManager.m; sourceTree = "<group>"; };
-		BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterManagerTest.m; sourceTree = "<group>"; };
-		BE59B7DC11209441006598A7 /* PropSetterFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterFunction.h; sourceTree = "<group>"; };
-		BE59B7DD11209441006598A7 /* PropSetterFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterFunction.m; sourceTree = "<group>"; };
-		BE59B80711209FD8006598A7 /* PropSetterInvocationRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterInvocationRecord.h; sourceTree = "<group>"; };
-		BE59B80811209FD8006598A7 /* PropSetterInvocationRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterInvocationRecord.m; sourceTree = "<group>"; };
-		BE6951EC1118A8930096FE6A /* PropSetterOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterOperator.h; sourceTree = "<group>"; };
-		BE6951ED1118A8930096FE6A /* PropSetterOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterOperator.m; sourceTree = "<group>"; };
-		BE6D662E11177B4C008D34BC /* PropSetterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterTest.m; sourceTree = "<group>"; };
+		BE5F17A5112EDDE400EC50B2 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = test/GTMDefines.h; sourceTree = "<group>"; };
+		BE5F17A6112EDDE400EC50B2 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = test/GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
+		BE5F17A7112EDDE400EC50B2 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestDelegate.m; path = test/GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
+		BE5F17A8112EDDE400EC50B2 /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = test/GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
+		BE5F17A9112EDDE400EC50B2 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = test/GTMSenTestCase.h; sourceTree = "<group>"; };
+		BE5F17AA112EDDE400EC50B2 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = test/GTMSenTestCase.m; sourceTree = "<group>"; };
+		BE5F17AE112EDE0000EC50B2 /* GrammarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrammarTest.m; path = test/GrammarTest.m; sourceTree = "<group>"; };
+		BE5F17AF112EDE0000EC50B2 /* PropSetterManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterManagerTest.m; path = test/PropSetterManagerTest.m; sourceTree = "<group>"; };
+		BE5F17B0112EDE0000EC50B2 /* PropSetterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterTest.m; path = test/PropSetterTest.m; sourceTree = "<group>"; };
+		BE5F17BD112EE25200EC50B2 /* PropSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetter.m; path = src/PropSetter.m; sourceTree = "<group>"; };
+		BE5F17BE112EE25200EC50B2 /* PropSetterClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterClause.m; path = src/PropSetterClause.m; sourceTree = "<group>"; };
+		BE5F17BF112EE25200EC50B2 /* PropSetterExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterExpression.m; path = src/PropSetterExpression.m; sourceTree = "<group>"; };
+		BE5F17C0112EE25200EC50B2 /* PropSetterFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterFunction.m; path = src/PropSetterFunction.m; sourceTree = "<group>"; };
+		BE5F17C1112EE25200EC50B2 /* PropSetterIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterIdentifier.m; path = src/PropSetterIdentifier.m; sourceTree = "<group>"; };
+		BE5F17C2112EE25200EC50B2 /* PropSetterInvocationRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterInvocationRecord.m; path = src/PropSetterInvocationRecord.m; sourceTree = "<group>"; };
+		BE5F17C3112EE25200EC50B2 /* PropSetterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterManager.m; path = src/PropSetterManager.m; sourceTree = "<group>"; };
+		BE5F17C4112EE25200EC50B2 /* PropSetterOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterOperator.m; path = src/PropSetterOperator.m; sourceTree = "<group>"; };
+		BE5F17C5112EE25200EC50B2 /* PropSetterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterParser.m; path = src/PropSetterParser.m; sourceTree = "<group>"; };
+		BE5F17C6112EE25200EC50B2 /* PropSetterProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterProperty.m; path = src/PropSetterProperty.m; sourceTree = "<group>"; };
+		BE5F17C7112EE25200EC50B2 /* PropSetterSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterSelector.m; path = src/PropSetterSelector.m; sourceTree = "<group>"; };
+		BE5F17C8112EE25200EC50B2 /* PropSetterSelfReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterSelfReference.m; path = src/PropSetterSelfReference.m; sourceTree = "<group>"; };
+		BE5F17C9112EE25200EC50B2 /* PropSetterValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropSetterValue.m; path = src/PropSetterValue.m; sourceTree = "<group>"; };
+		BE5F17E4112EE26300EC50B2 /* PropSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetter.h; path = include/PropSetter.h; sourceTree = "<group>"; };
+		BE5F17E5112EE26300EC50B2 /* PropSetterClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterClause.h; path = include/PropSetterClause.h; sourceTree = "<group>"; };
+		BE5F17E6112EE26300EC50B2 /* PropSetterError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterError.h; path = include/PropSetterError.h; sourceTree = "<group>"; };
+		BE5F17E7112EE26300EC50B2 /* PropSetterExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterExpression.h; path = include/PropSetterExpression.h; sourceTree = "<group>"; };
+		BE5F17E8112EE26300EC50B2 /* PropSetterFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterFunction.h; path = include/PropSetterFunction.h; sourceTree = "<group>"; };
+		BE5F17E9112EE26300EC50B2 /* PropSetterIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterIdentifier.h; path = include/PropSetterIdentifier.h; sourceTree = "<group>"; };
+		BE5F17EA112EE26300EC50B2 /* PropSetterInvocationRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterInvocationRecord.h; path = include/PropSetterInvocationRecord.h; sourceTree = "<group>"; };
+		BE5F17EB112EE26300EC50B2 /* PropSetterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterManager.h; path = include/PropSetterManager.h; sourceTree = "<group>"; };
+		BE5F17EC112EE26300EC50B2 /* PropSetterObjectWithValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterObjectWithValue.h; path = include/PropSetterObjectWithValue.h; sourceTree = "<group>"; };
+		BE5F17ED112EE26300EC50B2 /* PropSetterOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterOperator.h; path = include/PropSetterOperator.h; sourceTree = "<group>"; };
+		BE5F17EE112EE26300EC50B2 /* PropSetterParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterParser.h; path = include/PropSetterParser.h; sourceTree = "<group>"; };
+		BE5F17EF112EE26300EC50B2 /* PropSetterProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterProperty.h; path = include/PropSetterProperty.h; sourceTree = "<group>"; };
+		BE5F17F0112EE26300EC50B2 /* PropSetterSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterSelector.h; path = include/PropSetterSelector.h; sourceTree = "<group>"; };
+		BE5F17F1112EE26300EC50B2 /* PropSetterSelfReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterSelfReference.h; path = include/PropSetterSelfReference.h; sourceTree = "<group>"; };
+		BE5F17F2112EE26300EC50B2 /* PropSetterTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterTypes.h; path = include/PropSetterTypes.h; sourceTree = "<group>"; };
+		BE5F17F3112EE26300EC50B2 /* PropSetterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropSetterValue.h; path = include/PropSetterValue.h; sourceTree = "<group>"; };
 		BEB9A79010F535230094D27C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEB9A79410F535300094D27C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BEB9A7F210F53CD80094D27C /* PropSetterParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterParser.h; sourceTree = "<group>"; };
-		BEB9A7F310F53CD80094D27C /* PropSetterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterParser.m; sourceTree = "<group>"; };
-		BEE1E66F10FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterObjectWithValue.h; sourceTree = "<group>"; };
-		BEE1E67110FE5A6900FCD2F4 /* PropSetterExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterExpression.h; sourceTree = "<group>"; };
-		BEE1E67210FE5A6900FCD2F4 /* PropSetterExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterExpression.m; sourceTree = "<group>"; };
-		BEE1E67610FE5A9700FCD2F4 /* PropSetterClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterClause.h; sourceTree = "<group>"; };
-		BEE1E67710FE5A9700FCD2F4 /* PropSetterClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterClause.m; sourceTree = "<group>"; };
-		BEE1E67B10FE5AAD00FCD2F4 /* PropSetterIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterIdentifier.h; sourceTree = "<group>"; };
-		BEE1E67C10FE5AAD00FCD2F4 /* PropSetterIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterIdentifier.m; sourceTree = "<group>"; };
-		BEE1E68010FE5AC300FCD2F4 /* PropSetterSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterSelector.h; sourceTree = "<group>"; };
-		BEE1E68110FE5AC300FCD2F4 /* PropSetterSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterSelector.m; sourceTree = "<group>"; };
-		BEE1E68510FE5AE500FCD2F4 /* PropSetterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterValue.h; sourceTree = "<group>"; };
-		BEE1E68610FE5AE500FCD2F4 /* PropSetterValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterValue.m; sourceTree = "<group>"; };
-		BEE1E68A10FE5B0100FCD2F4 /* PropSetterSelfReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterSelfReference.h; sourceTree = "<group>"; };
-		BEE1E68B10FE5B0100FCD2F4 /* PropSetterSelfReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterSelfReference.m; sourceTree = "<group>"; };
-		BEE1E68F10FE5B1400FCD2F4 /* PropSetterProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterProperty.h; sourceTree = "<group>"; };
-		BEE1E69010FE5B1400FCD2F4 /* PropSetterProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropSetterProperty.m; sourceTree = "<group>"; };
-		BEE1E69E10FE5B5600FCD2F4 /* PropSetterTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterTypes.h; sourceTree = "<group>"; };
-		BEE1E6A010FE5B9000FCD2F4 /* PropSetterError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropSetterError.h; sourceTree = "<group>"; };
-		BEEEFA8F10F2773400767C37 /* GrammarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrammarTest.m; sourceTree = "<group>"; };
-		BEEEFB9F10F288B400767C37 /* selector.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = selector.grammar; sourceTree = "<group>"; };
 		BEEEFBF610F28DA100767C37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BEEEFC8510F2999700767C37 /* libparsekit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libparsekit.a; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libPropSetter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPropSetter.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,36 +220,36 @@
 		08FB77AEFE84172EC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BE5F17E4112EE26300EC50B2 /* PropSetter.h */,
+				BE5F17E5112EE26300EC50B2 /* PropSetterClause.h */,
+				BE5F17E6112EE26300EC50B2 /* PropSetterError.h */,
+				BE5F17E7112EE26300EC50B2 /* PropSetterExpression.h */,
+				BE5F17E8112EE26300EC50B2 /* PropSetterFunction.h */,
+				BE5F17E9112EE26300EC50B2 /* PropSetterIdentifier.h */,
+				BE5F17EA112EE26300EC50B2 /* PropSetterInvocationRecord.h */,
+				BE5F17EB112EE26300EC50B2 /* PropSetterManager.h */,
+				BE5F17EC112EE26300EC50B2 /* PropSetterObjectWithValue.h */,
+				BE5F17ED112EE26300EC50B2 /* PropSetterOperator.h */,
+				BE5F17EE112EE26300EC50B2 /* PropSetterParser.h */,
+				BE5F17EF112EE26300EC50B2 /* PropSetterProperty.h */,
+				BE5F17F0112EE26300EC50B2 /* PropSetterSelector.h */,
+				BE5F17F1112EE26300EC50B2 /* PropSetterSelfReference.h */,
+				BE5F17F2112EE26300EC50B2 /* PropSetterTypes.h */,
+				BE5F17F3112EE26300EC50B2 /* PropSetterValue.h */,
+				BE5F17BD112EE25200EC50B2 /* PropSetter.m */,
+				BE5F17BE112EE25200EC50B2 /* PropSetterClause.m */,
+				BE5F17BF112EE25200EC50B2 /* PropSetterExpression.m */,
+				BE5F17C0112EE25200EC50B2 /* PropSetterFunction.m */,
+				BE5F17C1112EE25200EC50B2 /* PropSetterIdentifier.m */,
+				BE5F17C2112EE25200EC50B2 /* PropSetterInvocationRecord.m */,
+				BE5F17C3112EE25200EC50B2 /* PropSetterManager.m */,
+				BE5F17C4112EE25200EC50B2 /* PropSetterOperator.m */,
+				BE5F17C5112EE25200EC50B2 /* PropSetterParser.m */,
+				BE5F17C6112EE25200EC50B2 /* PropSetterProperty.m */,
+				BE5F17C7112EE25200EC50B2 /* PropSetterSelector.m */,
+				BE5F17C8112EE25200EC50B2 /* PropSetterSelfReference.m */,
+				BE5F17C9112EE25200EC50B2 /* PropSetterValue.m */,
 				BE1871D910F3818D00C8D044 /* selector_grammar.h */,
-				BE1871B010F378A200C8D044 /* PropSetter.h */,
-				BE1871B110F378A200C8D044 /* PropSetter.m */,
-				BEB9A7F210F53CD80094D27C /* PropSetterParser.h */,
-				BEB9A7F310F53CD80094D27C /* PropSetterParser.m */,
-				BEE1E66F10FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h */,
-				BEE1E67110FE5A6900FCD2F4 /* PropSetterExpression.h */,
-				BEE1E67210FE5A6900FCD2F4 /* PropSetterExpression.m */,
-				BEE1E67610FE5A9700FCD2F4 /* PropSetterClause.h */,
-				BEE1E67710FE5A9700FCD2F4 /* PropSetterClause.m */,
-				BEE1E67B10FE5AAD00FCD2F4 /* PropSetterIdentifier.h */,
-				BEE1E67C10FE5AAD00FCD2F4 /* PropSetterIdentifier.m */,
-				BEE1E68010FE5AC300FCD2F4 /* PropSetterSelector.h */,
-				BEE1E68110FE5AC300FCD2F4 /* PropSetterSelector.m */,
-				BEE1E68510FE5AE500FCD2F4 /* PropSetterValue.h */,
-				BEE1E68610FE5AE500FCD2F4 /* PropSetterValue.m */,
-				BEE1E68A10FE5B0100FCD2F4 /* PropSetterSelfReference.h */,
-				BEE1E68B10FE5B0100FCD2F4 /* PropSetterSelfReference.m */,
-				BEE1E68F10FE5B1400FCD2F4 /* PropSetterProperty.h */,
-				BEE1E69010FE5B1400FCD2F4 /* PropSetterProperty.m */,
-				BEE1E69E10FE5B5600FCD2F4 /* PropSetterTypes.h */,
-				BEE1E6A010FE5B9000FCD2F4 /* PropSetterError.h */,
-				BE6951EC1118A8930096FE6A /* PropSetterOperator.h */,
-				BE6951ED1118A8930096FE6A /* PropSetterOperator.m */,
-				BE4FA28E1118EE3100DBB98A /* PropSetterManager.h */,
-				BE4FA28F1118EE3100DBB98A /* PropSetterManager.m */,
-				BE59B7DC11209441006598A7 /* PropSetterFunction.h */,
-				BE59B7DD11209441006598A7 /* PropSetterFunction.m */,
-				BE59B80711209FD8006598A7 /* PropSetterInvocationRecord.h */,
-				BE59B80811209FD8006598A7 /* PropSetterInvocationRecord.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -267,9 +265,9 @@
 		BD849B6C0F8921BB00EB1682 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				BEEEFA8F10F2773400767C37 /* GrammarTest.m */,
-				BE6D662E11177B4C008D34BC /* PropSetterTest.m */,
-				BE4FA2BE1119C9C700DBB98A /* PropSetterManagerTest.m */,
+				BE5F17AE112EDE0000EC50B2 /* GrammarTest.m */,
+				BE5F17AF112EDE0000EC50B2 /* PropSetterManagerTest.m */,
+				BE5F17B0112EDE0000EC50B2 /* PropSetterTest.m */,
 			);
 			name = UnitTests;
 			sourceTree = "<group>";
@@ -277,12 +275,12 @@
 		BD849B6E0F8921ED00EB1682 /* GoogleToolbox */ = {
 			isa = PBXGroup;
 			children = (
-				BD80A7990F8D2EA50067878C /* GTMDefines.h */,
-				BD80A7960F8D2EA50067878C /* GTMSenTestCase.h */,
-				BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */,
-				BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */,
-				BD80A7940F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.h */,
-				BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */,
+				BE5F17A5112EDDE400EC50B2 /* GTMDefines.h */,
+				BE5F17A6112EDDE400EC50B2 /* GTMIPhoneUnitTestDelegate.h */,
+				BE5F17A7112EDDE400EC50B2 /* GTMIPhoneUnitTestDelegate.m */,
+				BE5F17A8112EDDE400EC50B2 /* GTMIPhoneUnitTestMain.m */,
+				BE5F17A9112EDDE400EC50B2 /* GTMSenTestCase.h */,
+				BE5F17AA112EDDE400EC50B2 /* GTMSenTestCase.m */,
 			);
 			name = GoogleToolbox;
 			sourceTree = "<group>";
@@ -290,7 +288,6 @@
 		BEEEFB5A10F2878C00767C37 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BEEEFB9F10F288B400767C37 /* selector.grammar */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -302,23 +299,23 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE1871B310F378A200C8D044 /* PropSetter.h in Headers */,
 				BE1871DA10F3818D00C8D044 /* selector_grammar.h in Headers */,
-				BEB9A7F410F53CD80094D27C /* PropSetterParser.h in Headers */,
-				BEE1E67010FE5A4A00FCD2F4 /* PropSetterObjectWithValue.h in Headers */,
-				BEE1E67310FE5A6900FCD2F4 /* PropSetterExpression.h in Headers */,
-				BEE1E67810FE5A9700FCD2F4 /* PropSetterClause.h in Headers */,
-				BEE1E67D10FE5AAD00FCD2F4 /* PropSetterIdentifier.h in Headers */,
-				BEE1E68210FE5AC300FCD2F4 /* PropSetterSelector.h in Headers */,
-				BEE1E68710FE5AE500FCD2F4 /* PropSetterValue.h in Headers */,
-				BEE1E68C10FE5B0100FCD2F4 /* PropSetterSelfReference.h in Headers */,
-				BEE1E69110FE5B1400FCD2F4 /* PropSetterProperty.h in Headers */,
-				BEE1E69F10FE5B5600FCD2F4 /* PropSetterTypes.h in Headers */,
-				BEE1E6A110FE5B9000FCD2F4 /* PropSetterError.h in Headers */,
-				BE6951EF1118A8930096FE6A /* PropSetterOperator.h in Headers */,
-				BE4FA2911118EE3100DBB98A /* PropSetterManager.h in Headers */,
-				BE59B7DF11209441006598A7 /* PropSetterFunction.h in Headers */,
-				BE59B80A11209FD8006598A7 /* PropSetterInvocationRecord.h in Headers */,
+				BE5F17F4112EE26300EC50B2 /* PropSetter.h in Headers */,
+				BE5F17F5112EE26300EC50B2 /* PropSetterClause.h in Headers */,
+				BE5F17F6112EE26300EC50B2 /* PropSetterError.h in Headers */,
+				BE5F17F7112EE26300EC50B2 /* PropSetterExpression.h in Headers */,
+				BE5F17F8112EE26300EC50B2 /* PropSetterFunction.h in Headers */,
+				BE5F17F9112EE26300EC50B2 /* PropSetterIdentifier.h in Headers */,
+				BE5F17FA112EE26300EC50B2 /* PropSetterInvocationRecord.h in Headers */,
+				BE5F17FB112EE26300EC50B2 /* PropSetterManager.h in Headers */,
+				BE5F17FC112EE26300EC50B2 /* PropSetterObjectWithValue.h in Headers */,
+				BE5F17FD112EE26300EC50B2 /* PropSetterOperator.h in Headers */,
+				BE5F17FE112EE26300EC50B2 /* PropSetterParser.h in Headers */,
+				BE5F17FF112EE26300EC50B2 /* PropSetterProperty.h in Headers */,
+				BE5F1800112EE26300EC50B2 /* PropSetterSelector.h in Headers */,
+				BE5F1801112EE26300EC50B2 /* PropSetterSelfReference.h in Headers */,
+				BE5F1802112EE26300EC50B2 /* PropSetterTypes.h in Headers */,
+				BE5F1803112EE26300EC50B2 /* PropSetterValue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +324,7 @@
 /* Begin PBXLegacyTarget section */
 		BE1871EF10F3825E00C8D044 /* Generate Grammars */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-i selector.grammar selector_grammar.h";
+			buildArgumentsString = "-i res/selector.grammar selector_grammar.h";
 			buildConfigurationList = BE1871FA10F3826E00C8D044 /* Build configuration list for PBXLegacyTarget "Generate Grammars" */;
 			buildPhases = (
 			);
@@ -406,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD80A6F20F8C87A60067878C /* UnitTest-Info.plist in Resources */,
-				BEEEFBA010F288B400767C37 /* selector.grammar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,25 +430,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD80A79A0F8D2EA50067878C /* GTMSenTestCase.m in Sources */,
-				BD80A79B0F8D2EA50067878C /* GTMIPhoneUnitTestMain.m in Sources */,
-				BD80A79C0F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m in Sources */,
-				BEEEFA9010F2773400767C37 /* GrammarTest.m in Sources */,
-				BE1871B210F378A200C8D044 /* PropSetter.m in Sources */,
-				BEB9A7F610F53CD80094D27C /* PropSetterParser.m in Sources */,
-				BEE1E67510FE5A6900FCD2F4 /* PropSetterExpression.m in Sources */,
-				BEE1E67A10FE5A9700FCD2F4 /* PropSetterClause.m in Sources */,
-				BEE1E67F10FE5AAD00FCD2F4 /* PropSetterIdentifier.m in Sources */,
-				BEE1E68410FE5AC300FCD2F4 /* PropSetterSelector.m in Sources */,
-				BEE1E68910FE5AE500FCD2F4 /* PropSetterValue.m in Sources */,
-				BEE1E68E10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */,
-				BEE1E69310FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */,
-				BE6D663011177B4C008D34BC /* PropSetterTest.m in Sources */,
-				BE6951EE1118A8930096FE6A /* PropSetterOperator.m in Sources */,
-				BE4FA2901118EE3100DBB98A /* PropSetterManager.m in Sources */,
-				BE4FA2BF1119C9C700DBB98A /* PropSetterManagerTest.m in Sources */,
-				BE59B7DE11209441006598A7 /* PropSetterFunction.m in Sources */,
-				BE59B80911209FD8006598A7 /* PropSetterInvocationRecord.m in Sources */,
+				BE5F17AB112EDDE400EC50B2 /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				BE5F17AC112EDDE400EC50B2 /* GTMIPhoneUnitTestMain.m in Sources */,
+				BE5F17AD112EDDE400EC50B2 /* GTMSenTestCase.m in Sources */,
+				BE5F17B1112EDE0000EC50B2 /* GrammarTest.m in Sources */,
+				BE5F17B2112EDE0000EC50B2 /* PropSetterManagerTest.m in Sources */,
+				BE5F17B3112EDE0000EC50B2 /* PropSetterTest.m in Sources */,
+				BE5F17CA112EE25200EC50B2 /* PropSetter.m in Sources */,
+				BE5F17CB112EE25200EC50B2 /* PropSetterClause.m in Sources */,
+				BE5F17CC112EE25200EC50B2 /* PropSetterExpression.m in Sources */,
+				BE5F17CD112EE25200EC50B2 /* PropSetterFunction.m in Sources */,
+				BE5F17CE112EE25200EC50B2 /* PropSetterIdentifier.m in Sources */,
+				BE5F17CF112EE25200EC50B2 /* PropSetterInvocationRecord.m in Sources */,
+				BE5F17D0112EE25200EC50B2 /* PropSetterManager.m in Sources */,
+				BE5F17D1112EE25200EC50B2 /* PropSetterOperator.m in Sources */,
+				BE5F17D2112EE25200EC50B2 /* PropSetterParser.m in Sources */,
+				BE5F17D3112EE25200EC50B2 /* PropSetterProperty.m in Sources */,
+				BE5F17D4112EE25200EC50B2 /* PropSetterSelector.m in Sources */,
+				BE5F17D5112EE25200EC50B2 /* PropSetterSelfReference.m in Sources */,
+				BE5F17D6112EE25200EC50B2 /* PropSetterValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,19 +456,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE1871B410F378A200C8D044 /* PropSetter.m in Sources */,
-				BEB9A7F510F53CD80094D27C /* PropSetterParser.m in Sources */,
-				BEE1E67410FE5A6900FCD2F4 /* PropSetterExpression.m in Sources */,
-				BEE1E67910FE5A9700FCD2F4 /* PropSetterClause.m in Sources */,
-				BEE1E67E10FE5AAD00FCD2F4 /* PropSetterIdentifier.m in Sources */,
-				BEE1E68310FE5AC300FCD2F4 /* PropSetterSelector.m in Sources */,
-				BEE1E68810FE5AE500FCD2F4 /* PropSetterValue.m in Sources */,
-				BEE1E68D10FE5B0100FCD2F4 /* PropSetterSelfReference.m in Sources */,
-				BEE1E69210FE5B1400FCD2F4 /* PropSetterProperty.m in Sources */,
-				BE6951F01118A8930096FE6A /* PropSetterOperator.m in Sources */,
-				BE4FA2921118EE3100DBB98A /* PropSetterManager.m in Sources */,
-				BE59B7E011209441006598A7 /* PropSetterFunction.m in Sources */,
-				BE59B80B11209FD8006598A7 /* PropSetterInvocationRecord.m in Sources */,
+				BE5F17D7112EE25200EC50B2 /* PropSetter.m in Sources */,
+				BE5F17D8112EE25200EC50B2 /* PropSetterClause.m in Sources */,
+				BE5F17D9112EE25200EC50B2 /* PropSetterExpression.m in Sources */,
+				BE5F17DA112EE25200EC50B2 /* PropSetterFunction.m in Sources */,
+				BE5F17DB112EE25200EC50B2 /* PropSetterIdentifier.m in Sources */,
+				BE5F17DC112EE25200EC50B2 /* PropSetterInvocationRecord.m in Sources */,
+				BE5F17DD112EE25200EC50B2 /* PropSetterManager.m in Sources */,
+				BE5F17DE112EE25200EC50B2 /* PropSetterOperator.m in Sources */,
+				BE5F17DF112EE25200EC50B2 /* PropSetterParser.m in Sources */,
+				BE5F17E0112EE25200EC50B2 /* PropSetterProperty.m in Sources */,
+				BE5F17E1112EE25200EC50B2 /* PropSetterSelector.m in Sources */,
+				BE5F17E2112EE25200EC50B2 /* PropSetterSelfReference.m in Sources */,
+				BE5F17E3112EE25200EC50B2 /* PropSetterValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
