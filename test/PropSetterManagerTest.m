@@ -52,7 +52,6 @@
 - (void) setUp {
 	label = [[UILabel alloc] initWithFrame:CGRectZero];
 	PropSetterManager * mgr = [PropSetterManager manager];
-	[mgr reset];
 }
 
 - (void) testBasicKVOChange {
@@ -127,6 +126,7 @@
 
 
 - (void) tearDown {
+	[[PropSetterManager manager] reset];
 	[label release];
 }
 
