@@ -55,7 +55,7 @@
 
 -(id) init {
 	if(self = [super init]){
-		grammar = [[NSString alloc] initWithCString:(const char *)selector_grammar length:selector_grammar_len];
+		grammar = [[NSString alloc] initWithCString:(const char *)res_selector_grammar length:res_selector_grammar_len];
 		factory = [[PKParserFactory alloc] init];
 	}
 	return self;
