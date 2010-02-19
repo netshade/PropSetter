@@ -80,6 +80,6 @@ This will allow you to use custom functions you have registered with the shared 
 
 @nameOfFunction("value1", 2.0, true)
 
-If an NSString fails to be parsed correctly, it will be assumed that the value is intended as a literal string, and will be imported as thus.
+If an NSString fails to be parsed correctly, it will be assumed that the value is intended as a literal string, and will be imported as such.
 
 This code was written for the Indianapolis Star, and has been open sourced by them using the MIT license.
