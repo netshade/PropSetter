@@ -78,11 +78,33 @@ static inline NSString * NSStringToCamelCase(NSString * subject){
 	if([value conformsToProtocol:@protocol(PropSetterObjectWithValue)]){
 		v = [value valueWithObject:object];
 	}
-	if([members count] > 1){
-		[object setValue:v forKeyPath:[self name]];
-	} else {
-		[object setValue:v forKey:[self name]];
+	@try {
+		if([members count] > 1){
+			[object setValue:v forKeyPath:[self name]];
+		} else {
+			[object setValue:v forKey:[self name]];
+		}
 	}
+	@catch (NSException * e) {
+		if([[e name] isEqualToString:NSUndefinedKeyException]){
+			NSString * mem = [members objectAtIndex:0];
+			id targetObject = object;
+			if([members count] > 1){
+				for(NSString * m in members){
+					targetObject = [targetObject performSelector:NSSelectorFromString(m)];
+					mem = m;
+				}
+			}
+			SEL traditionalSetter = NSSelectorFromString([NSString stringWithFormat:@"set%@:", NSStringToCamelCase(mem)]);	
+			if([targetObject respondsToSelector:traditionalSetter]){
+				[targetObject performSelector:traditionalSetter withObject:v];		
+			}
+		} else {
+			[e raise];
+		}
+	}
+
+
 
 }
 
