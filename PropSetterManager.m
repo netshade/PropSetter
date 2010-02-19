@@ -116,7 +116,7 @@
 -(void) reset {
 	@synchronized(self){
 		for(id o in observed){
-			[self stopObservingObject:o];
+			[self stopObservingObject:[o pointerValue]];
 		}
 		[observed removeAllObjects];
 		[selectors removeAllObjects];
@@ -126,7 +126,8 @@
 
 -(void) beginObservingObject:(id)o {
 	@synchronized(self){
-		[observed addObject:o];
+		NSValue * v = [NSValue valueWithPointer:(void *)o];
+		[observed addObject:v];
 	}
 	for(NSString * p in keypaths){
 		[o addObserver:self forKeyPath:p options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) context:NULL];
@@ -134,12 +135,18 @@
 	[self applyRulesToObject:o];
 }
 
--(void) stopObservingObject:(id)o {
+-(void) stopObservingObject:(id)o {	
 	for(NSString * p in keypaths){
 		[o removeObserver:self forKeyPath:p];
 	}
 	@synchronized(self){
-		[observed removeObject:o];
+		NSMutableArray * any = [[NSMutableArray alloc] init];
+		void * op = (void *)o;
+		for(NSValue * v in observed){
+			if([v pointerValue] == op) [any addObject:v];
+		}
+		[observed removeObjectsInArray:any];
+		[any release];
 	}
 }
 
